@@ -1,0 +1,129 @@
+
+/* BEGIN FEATURED ARTICLES AUTOMATIC COLOR SCHEME */
+/* Slideshow container */
+.fa-slidenav.default {
+	border-width:0px;/*container*/
+	border-style:none;/*container*/
+	border-color:transparent;/*container*/
+	background-color:#000000;/*container*/
+	background-image:none;/*container*/
+	background-repeat:no-repeat;/*container*/
+	background-position:left top;/*container*/
+}
+/* Slide text container */
+.fa-slidenav.default .slide  .content{
+	background-color:transparent;/*text_container*/
+	background-image:url(../images/content_bg.png);/*text_container*/
+	background-repeat:repeat;/*text_container*/
+	background-position:left top;/*text_container*/
+}
+/* Slide text */
+.fa-slidenav.default .slide  .content div.fa_content{
+	font-size:1em;/*slide_text*/
+	color:#FFFFFF;/*slide_text*/
+}
+/* Links in slide description */
+.fa-slidenav.default .slide  .content div.fa_content a{
+	font-size:1em;/*slide_anchor*/
+	text-decoration:none;/*slide_anchor*/
+	color:#FFFFFF;/*slide_anchor*/
+}
+/* Hovered links in slide description */
+.fa-slidenav.default .slide  .content div.fa_content a:HOVER{
+	font-size:1em;/*slide_anchor_hover*/
+	text-decoration:underline;/*slide_anchor_hover*/
+	color:#FFFFFF;/*slide_anchor_hover*/
+}
+/* Navigation container */
+.fa-slidenav.default .navigation-items{
+	background-color:#292929;/*navigation_container*/
+	background-image:none;/*navigation_container*/
+	background-repeat:no-repeat;/*navigation_container*/
+	background-position:left top;/*navigation_container*/
+}
+/* Navigation element - all */
+.fa-slidenav.default .navigation-items li{
+	background-color:#7f7f7f;/*navigation_odd*/
+	background-image:none;/*navigation_odd*/
+	background-repeat:no-repeat;/*navigation_odd*/
+	background-position:left top;/*navigation_odd*/
+}
+/* Navigation element - even */
+.fa-slidenav.default .navigation-items li.even{
+	background-color:#949494;/*navigation_even*/
+	background-image:none;/*navigation_even*/
+	background-repeat:no-repeat;/*navigation_even*/
+	background-position:left top;/*navigation_even*/
+}
+/* Navigation element - active */
+.fa-slidenav.default .navigation-items li.active{
+	background-color:#3c3c3c;/*navigation_active*/
+	background-image:none;/*navigation_active*/
+	background-repeat:no-repeat;/*navigation_active*/
+	background-position:left top;/*navigation_active*/
+}
+/* Navigation element - hover */
+.fa-slidenav.default .navigation-items li.hover{
+	background-color:#999999;/*navigation_hover*/
+	background-image:none;/*navigation_hover*/
+	background-repeat:no-repeat;/*navigation_hover*/
+	background-position:left top;/*navigation_hover*/
+}
+/* Navigation text */
+.fa-slidenav.default .navigation-items li strong{
+	color:#FFFFFF;/*navigation_text*/
+	font-size:1em;/*navigation_text*/
+}
+/* Navigation timer - visible on autoslide */
+.fa-slidenav.default .navigation-items .timer{
+	background-color:#000;/*navigation_timer*/
+	background-image:none;/*navigation_timer*/
+	background-position:left top;/*navigation_timer*/
+	background-repeat:no-repeat;/*navigation_timer*/
+}
+/* Navigation thumbnail */
+div.nav-thumb.default{
+	border-width:3px;/*navigation_thumb*/
+	border-style:solid;/*navigation_thumb*/
+	border-color:#3c3c3c;/*navigation_thumb*/
+	-moz-border-radius:0px;/*navigation_thumb*/
+	-webkit-border-radius:0px;/*navigation_thumb*/
+	-o-border-radius:0px;/*navigation_thumb*/
+	-ms-border-radius:0px;/*navigation_thumb*/
+	border-radius:0px;/*navigation_thumb*/
+	-moz-box-shadow:1px -1px 2px 0px #000000;/*navigation_thumb*/
+	-webkit-box-shadow:1px -1px 2px 0px #000000;/*navigation_thumb*/
+	-o-box-shadow:1px -1px 2px 0px #000000;/*navigation_thumb*/
+	-ms-box-shadow:1px -1px 2px 0px #000000;/*navigation_thumb*/
+	box-shadow:1px -1px 2px 0px #000000;/*navigation_thumb*/
+}
+/* Navigation elements - slide back */
+.fa-slidenav.default .navigation a.slide-back{
+	background-color:#292929;/*nav_overflow_back*/
+	background-image:url(../images/left_nav_overflow.png);/*nav_overflow_back*/
+	background-position:center top;/*nav_overflow_back*/
+	background-repeat:no-repeat;/*nav_overflow_back*/
+}
+/* Navigation elements - slide back hover */
+.fa-slidenav.default .navigation a.slide-back:HOVER{
+	background-color:#292929;/*nav_overflow_back_hover*/
+	background-image:url(../images/left_nav_overflow.png);/*nav_overflow_back_hover*/
+	background-position:center bottom;/*nav_overflow_back_hover*/
+	background-repeat:no-repeat;/*nav_overflow_back_hover*/
+}
+/* Navigation elements - slide forward */
+.fa-slidenav.default .navigation a.slide-forward{
+	background-color:#292929;/*nav_overflow_fwd*/
+	background-image:url(../images/right_nav_overflow.png);/*nav_overflow_fwd*/
+	background-position:center top;/*nav_overflow_fwd*/
+	background-repeat:no-repeat;/*nav_overflow_fwd*/
+}
+/* Navigation elements - slide forward hover */
+.fa-slidenav.default .navigation a.slide-forward:HOVER{
+	background-color:#292929;/*nav_overflow_fwd_hover*/
+	background-image:url(../images/right_nav_overflow.png);/*nav_overflow_fwd_hover*/
+	background-position:center bottom;/*nav_overflow_fwd_hover*/
+	background-repeat:no-repeat;/*nav_overflow_fwd_hover*/
+}
+
+/* END FEATURED ARTICLES AUTOMATIC COLOR SCHEME */

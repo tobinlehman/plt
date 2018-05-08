@@ -1,0 +1,180 @@
+/**
+ * Slider themes panel
+ */
+
+.fa-themes{
+	margin-left:1%;	
+}
+	.fa-theme{
+		cursor:default;
+		float:left;
+		margin:0 1% 1% 0;
+		position:relative;
+		width: 18.8%;
+		border:1px solid #dedede;					
+	}
+		.fa-theme .fa-screenshot{
+			display:block;
+			overflow:hidden;
+			position:relative;
+			padding-top:66%;
+		}
+			.fa-theme .fa-screenshot img{
+				height:auto;
+				position:absolute;
+				left:0px;
+				top:0px;
+				width:100%;
+			}
+			.fa-theme .fa-screenshot.blank{
+				background:url(../images/blank.png);
+			}
+			
+		.fa-theme .theme-name{
+			font-size:15px!important;
+			font-weight:600;
+			height:20px;
+			margin:0px;
+			padding:15px!important;
+			overflow:hidden;
+			white-space:nowrap;
+			text-overflow:ellipsis;
+			background:#FFF;
+			display:block;
+			border-left:none;
+			border-right:none;
+			border-bottom:none;
+			border-top:1px #CCC solid;
+			cursor:default!important;			
+		}
+		.fa-theme.active .theme-name{
+			background:#2f2f2f;
+			border-top:1px #2f2f2f solid;
+			color:#FFF;
+			font-weight:100;
+		}
+		
+		.fa-theme .theme-actions{
+			position:relative;
+			padding:10px 15px;
+			height:30px;
+			overflow:hidden;
+			border-left:none;
+			background:#EEE;
+			border-top:1px #dedede solid;
+		}
+		.fa-theme.active .theme-actions{
+			background:#2f2f2f;	
+			border-top:1px #dedede solid;		
+		}
+			.fa-theme .theme-actions select{
+				width:120px;
+			}
+			.fa-theme.active label{
+				color:#FFF;
+			}
+		
+/**
+ * Tabs styling
+ */
+.fa-horizontal-tabs a:hover, 
+.fa-horizontal-tabs a:active, 
+.fa-horizontal-tabs a:focus{
+   outline: 0!important;
+}
+
+.fa-optional-field-disabled{
+	font-style:italic;
+	color:#999;
+}
+
+.fa-horizontal-tabs .fa-tabs-nav{
+	display:block;
+	position:relative;
+	clear:both;
+	width:100%;
+	float:left;
+	list-style-type:none;
+	margin:0px;
+	padding:0px;
+	border-bottom:1px #CCC solid;
+	height:30px;
+}
+	.fa-horizontal-tabs .fa-tabs-nav li{
+		float:left;
+		margin:0px;
+		height:19px;
+		margin-right:5px;
+		margin-bottom:0px;
+		padding:5px 10px;
+		border:1px #ccc solid;
+		border-bottom:1px #CCC solid;
+		background:#EEE;
+	}
+		.fa-horizontal-tabs .fa-tabs-nav li a{
+			text-decoration:none;
+			color:#848484;
+		}	
+	.fa-horizontal-tabs .fa-tabs-nav li.ui-state-active{
+		background:#FFF;
+		border-bottom:1px #fff solid;
+	}
+		.fa-horizontal-tabs .fa-tabs-nav li.ui-state-active a{
+			font-weight:bold;
+			color:#000;
+		}		
+.fa-horizontal-tabs .panel{
+	display:block;
+	position:relative;
+	background:#FFF;
+	clear: both;
+	left: 0;
+	margin: 0;
+	padding: 1% 0 0 1%;
+	border-left:1px #CCC solid;
+	border-bottom:1px #CCC solid;
+	border-right:1px #CCC solid;
+	box-sizing:border-box;			
+}			
+
+/* Media queries */		
+@media only screen and (max-width: 1640px) {
+	.fa-theme{
+		width: 32%;
+	}
+}
+
+/* Maximum screenshot width reaches 440px */
+@media only screen and (max-width: 1120px) {
+	.fa-theme{
+		width: 48.5%;
+	}
+}
+
+/* Admin menu is folded */
+@media only screen and (max-width: 900px) {
+	.fa-theme{
+		width:48.5%;
+	}
+}
+
+@media only screen and (max-width: 780px) {
+	.fa-theme{
+		width:48.5%;
+		margin-bottom:3%;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.fa-theme{
+		width:48.5%;
+		margin-bottom:3%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.fa-theme{
+		width:100%;
+		margin-bottom:3%;
+	}
+}

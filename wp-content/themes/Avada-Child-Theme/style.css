@@ -1,0 +1,670 @@
+                /*
+Theme Name: Avada Child
+Description: Child theme for the Avada
+Author: Your name here
+Template: Avada
+*/
+            
+            @import url("../Avada/style.css");
+            body {
+                font-size: 18px;
+            }
+            
+            body .post-content p,
+            body .post-content {
+                line-height: 1.5;
+                margin-bottom: 20px;
+                font-size: 16px;
+                font-family: 'Open Sans', sans-serif;
+                color: #333;
+            }
+            
+            .forcefullwidth_wrapper_tp_banner {
+                margin-top: -56px !important;
+            }
+            
+            #content a {
+                border-bottom: thin dotted #333 !important;
+            }
+            
+            #content a.btn.button.btn-default {
+                border-bottom: none !important;
+            }
+            
+            #content a img {
+                border-bottom: none !important;
+            }
+            
+            #nav ul li {
+                z-index: 99999;
+            }
+            
+            li {
+                padding-bottom: 6px;
+            }
+            
+            .content-boxes .col {
+                padding: 10px !important;
+            }
+            
+            .columns {
+                margin-bottom: 10px !important;
+            }
+            
+            .fusion-content-boxes {
+                margin-top: 20px !important;
+            }
+            
+            .content-wrapper-background .content-wrapper-boxed {
+                padding: 50px 18px 18px 18px !important;
+            }
+            
+            .fusion-content-boxes.content-boxes-icon-boxed .content-wrapper-boxed {
+                padding: 50px 18px 18px 18px !important;
+            }
+            
+            #wrapper .fusion-megamenu-icon img,
+            .fusion-megamenu-icon img {
+                max-height: 33px !important;
+            }
+            
+            #wrapper .fusion-megamenu-title {
+                padding-bottom: 5px !important;
+            }
+            
+            #wrapper .fusion-megamenu-wrapper .fusion-megamenu-widgets-container.second-level-widget {
+                padding: 0 74px !important;
+            }
+            
+            #nav.nav-holder .navigation>li>a {
+                height: 40px !important;
+                line-height: 40px !important;
+            }
+            
+            .fusion-reading-box-container {
+                margin-bottom: 2px;
+            }
+            
+            .fusion-testimonials .company-name {
+                vertical-align: top;
+            }
+            
+            #comment-input select {
+                border: 1px solid #D2D2D2;
+                width: 28%;
+                font-size: 13px;
+                color: #aaa9a9;
+                box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1) inset;
+                padding: 7px 2%;
+                float: left;
+                margin-right: 1%;
+            }
+            
+            .post-content p {
+                margin-bottom: 2px;
+            }
+            
+            #site-footer {
+                font-size: 18px;
+            }
+            
+            #site-footer .col-md-10 ul li li {
+                font-size: 15px;
+            }
+            
+            #footer-row .widget_search #s {
+                border-radius: 0;
+                background-image: none;
+                background-repeat: no-repeat;
+                text-shadow: none;
+                border-color: transparent;
+                box-shadow: none;
+                background-color: transparent;
+                background-image: url(img/search_icon.png);
+                background-position: 97%;
+                margin-left: -30px;
+                margin-top: 5px;
+            }
+            
+            //
+            // Input groups
+            // --------------------------------------------------
+            // Base styles
+            // -------------------------
+            .input-group {
+                position: relative; // For dropdowns
+                display: table;
+                border-collapse: separate; // prevent input groups from inheriting border styles from table cells when placed within a table
+                // Undo padding and float of grid classes
+                &[class*="col-"] {
+                    float: none;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                .form-control {
+                    // Ensure that the input is always above the *appended* addon button for
+                    // proper border colors.
+                    position: relative;
+                    z-index: 2;
+                    // IE9 fubars the placeholder attribute in text inputs and the arrows on
+                    // select elements in input groups. To fix it, we float the input. Details:
+                    // https://github.com/twbs/bootstrap/issues/11561#issuecomment-28936855
+                    float: left;
+                    width: 100%;
+                    margin-bottom: 0;
+                    &:focus {
+                        z-index: 3;
+                    }
+                }
+            }
+            
+            // Sizing options
+            //
+            // Remix the default form control sizing classes into new ones for easier
+            // manipulation.
+            .input-group-lg>.form-control,
+            .input-group-lg>.input-group-addon,
+            .input-group-lg>.input-group-btn>.btn {
+                .input-lg();
+            }
+            
+            .input-group-sm>.form-control,
+            .input-group-sm>.input-group-addon,
+            .input-group-sm>.input-group-btn>.btn {
+                .input-sm();
+            }
+            
+            // Display as table-cell
+            // -------------------------
+            .input-group-addon,
+            .input-group-btn,
+            .input-group .form-control {
+                display: table-cell;
+                &:not(:first-child):not(:last-child) {
+                    border-radius: 0;
+                }
+            }
+            
+            // Addon and addon wrapper for buttons
+            .input-group-addon,
+            .input-group-btn {
+                width: 1%;
+                white-space: nowrap;
+                vertical-align: middle; // Match the inputs
+            }
+            
+            // Text input groups
+            // -------------------------
+            .input-group-addon {
+                padding: @padding-base-vertical @padding-base-horizontal;
+                font-size: @font-size-base;
+                font-weight: normal;
+                line-height: 1;
+                color: @input-color;
+                text-align: center;
+                background-color: @input-group-addon-bg;
+                border: 1px solid @input-group-addon-border-color;
+                border-radius: @input-border-radius;
+                // Sizing
+                &.input-sm {
+                    padding: @padding-small-vertical @padding-small-horizontal;
+                    font-size: @font-size-small;
+                    border-radius: @input-border-radius-small;
+                }
+                &.input-lg {
+                    padding: @padding-large-vertical @padding-large-horizontal;
+                    font-size: @font-size-large;
+                    border-radius: @input-border-radius-large;
+                }
+                // Nuke default margins from checkboxes and radios to vertically center within.
+                input[type="radio"],
+                input[type="checkbox"] {
+                    margin-top: 0;
+                }
+            }
+            
+            // Reset rounded corners
+            .input-group .form-control:first-child,
+            .input-group-addon:first-child,
+            .input-group-btn:first-child>.btn,
+            .input-group-btn:first-child>.btn-group>.btn,
+            .input-group-btn:first-child>.dropdown-toggle,
+            .input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle),
+            .input-group-btn:last-child>.btn-group:not(:last-child)>.btn {
+                .border-right-radius(0);
+            }
+            
+            .input-group-addon:first-child {
+                border-right: 0;
+            }
+            
+            .input-group .form-control:last-child,
+            .input-group-addon:last-child,
+            .input-group-btn:last-child>.btn,
+            .input-group-btn:last-child>.btn-group>.btn,
+            .input-group-btn:last-child>.dropdown-toggle,
+            .input-group-btn:first-child>.btn:not(:first-child),
+            .input-group-btn:first-child>.btn-group:not(:first-child)>.btn {
+                .border-left-radius(0);
+            }
+            
+            .input-group-addon:last-child {
+                border-left: 0;
+            }
+            
+            // Button input groups
+            // -------------------------
+            .input-group-btn {
+                position: relative;
+                // Jankily prevent input button groups from wrapping with `white-space` and
+                // `font-size` in combination with `inline-block` on buttons.
+                font-size: 0;
+                white-space: nowrap;
+                // Negative margin for spacing, position for bringing hovered/focused/actived
+                // element above the siblings.
+                >.btn {
+                    position: relative;
+                    +.btn {
+                        margin-left: -1px;
+                    }
+                    // Bring the "active" button to the front
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        z-index: 2;
+                    }
+                }
+                // Negative margin to only have a 1px border between the two
+                &:first-child {
+                    >.btn,
+                    >.btn-group {
+                        margin-right: -1px;
+                    }
+                }
+                &:last-child {
+                    >.btn,
+                    >.btn-group {
+                        z-index: 2;
+                        margin-left: -1px;
+                    }
+                }
+            }
+            
+            #footer-row .widget_search .text #s {
+                background-color: transparent;
+                border: 1px solid #9E2FB3;
+                color: #fff;
+            }
+            
+            @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+            not all,
+            only screen and (min-resolution: 120dpi) {
+                #header-sticky .normal_logo,
+                #header .normal_logo {
+                    display: block !important;
+                }
+            }
+            
+            header .logo {
+                display: block;
+            }
+            
+            #nav.nav-holder .navigation>li>a {
+                height: 83px;
+                line-height: 83px;
+                font-size: 13px;
+                font-weight: bold;
+                letter-spacing: 0.4px;
+                text-transform: uppercase;
+                color: #000;
+                padding: 0px;
+                /* font-family: 'PTSansRegular', Arial, Helvetica, sans-serif; */
+            }
+            
+            #nav.nav-holder .navigation>li>a.search-link {
+                font-family: IcoMoon;
+                margin-top: -5px;
+            }
+            
+            nav#nav,
+            nav#sticky-nav {
+                margin-top: 72px;
+            }
+            
+            body #wrapper #nav ul li ul li a,
+            body #wrapper #sticky-nav ul li ul li a,
+            body .side-nav li li a,
+            body .side-nav li.current_page_item li a {
+                color: #ffffff !important;
+            }
+            
+            .portfolio-one .button,
+            #main .comment-submit,
+            #reviews input#submit,
+            .comment-form input[type="submit"],
+            .wpcf7-form input[type="submit"],
+            .wpcf7-submit,
+            .bbp-submit-wrapper button,
+            .button-default,
+            .button.default,
+            .price_slider_amount button,
+            .gform_wrapper .gform_button,
+            .woocommerce .single_add_to_cart_button,
+            .woocommerce .shipping-calculator-form .button,
+            .woocommerce form.checkout #place_order,
+            .woocommerce .checkout_coupon .button,
+            .woocommerce .login .button,
+            .woocommerce .register .button,
+            .woocommerce .avada-order-details .order-again .button,
+            .woocommerce .avada-order-details .order-again .button {
+                background-color: #FFCD41 !important;
+                background: #FFCD41 !important;
+                color: black !important;
+                font-size: 18px;
+                text-shadow: 0px 0px;
+                padding: 10px 20px;
+                border: 1px solid #FFCD41;
+                font-weight: bold;
+                font-size: 16px;
+                background-image: none !important;
+                transition: all .25s;
+            }
+            
+            #main .comment-submit:hover,
+            #reviews input#submit,
+            .comment-form input[type="submit"]:hover,
+            .wpcf7-form input[type="submit"]:hover,
+            .wpcf7-submit:hover,
+            .bbp-submit-wrapper button:hover,
+            .button-default:hover,
+            .button.default:hover,
+            .price_slider_amount button:hover,
+            .gform_wrapper .gform_button:hover,
+            .woocommerce .single_add_to_cart_button:hover,
+            .woocommerce .shipping-calculator-form .button:hover,
+            .woocommerce form.checkout #place_order:hover,
+            .woocommerce .checkout_coupon .button:hover,
+            .woocommerce .login .button:hover,
+            .woocommerce .register .button:hover,
+            .woocommerce .avada-order-details .order-again .button:hover,
+            .woocommerce .avada-order-details .order-again .button:hover {
+                background-color: #ffcd4100 !important;
+            }
+            
+            #header-sticky .avada-row,
+            #header .avada-row,
+            #main .avada-row,
+            .footer-area .avada-row,
+            #slidingbar-area .avada-row,
+            #footer .avada-row {
+                max-width: 1200px !important;
+            }
+            
+            #nav.nav-holder .navigation>li>a {
+                font-size: 18px;
+            }
+            
+            #nav ul li,
+            #sticky-nav ul li {
+                padding-right: 15px !important;
+                border-right: 1px solid #000;
+                padding-left: 15px;
+                height: 23px;
+                line-height: 54px;
+            }
+            
+            #nav>ul>li:last-child,
+            #sticky-nav>ul>li:last-child {
+                padding-right: 0 !important;
+                border-right: 0px;
+            }
+            
+            #nav ul.sub-menu li,
+            #sticky-nav ul.sub-menu li {
+                padding-right: 15px !important;
+                border-right: 1px solid #000;
+                padding-left: 15px;
+                height: auto;
+                line-height: 18px;
+            }
+            
+            #nav.nav-holder .navigation>li>a {
+                font-size: 18px;
+                line-height: 24px !important;
+            }
+            
+            @media only screen and (max-width: 800px) {
+                #header {
+                    background-color: #ffffff;
+                }
+            }
+            
+            .fusion-reading-box-container .reading-box,
+            .fusion-flip-box .flip-box-front {
+                border-color: #20afbf !important;
+            }
+            
+            #nav .fusion-navbar-nav .fusion-megamenu-wrapper .fusion-megamenu-holder .fusion-megamenu .fusion-megamenu-submenu,
+            #sticky-nav .fusion-navbar-nav .fusion-megamenu-wrapper .fusion-megamenu-holder .fusion-megamenu .fusion-megamenu-submenu {
+                display: table-cell;
+                float: none;
+                line-height: 26px;
+            }
+            
+            @media (min-width: 768px) {
+                #wrapper .fusion-megamenu-wrapper .fusion-megamenu-submenu {
+                    display: table-cell;
+                    float: none;
+                    padding: 25px 0 0px;
+                }
+                @media only screen and (max-width: 800px) {
+                    #header {
+                        background-color: #ffffff !important;
+                    }
+                }
+                .header-social,
+                .header-v2 #header,
+                .header-v3 #header,
+                #header,
+                .header-v4 #small-nav,
+                .header-v5 #small-nav {
+                    border-bottom-color: #713b81 !important;
+                }
+                body #main a,
+                body #main a:before,
+                body #main a:after,
+                .single-navigation a[rel="prev"]:before,
+                .single-navigation a[rel="next"]:after {
+                    color: #000000;
+                }
+                .fusion-megamenu-holder .fusion-megamenu-border li.menu-item {
+                    border-bottom: 1px solid #dcd9d9 !important;
+                }
+                #wrapper #nav .fusion-navbar-nav .fusion-megamenu-wrapper li a,
+                #wrapper #nav .fusion-navbar-nav .fusion-megamenu-wrapper li ul li a,
+                #wrapper #sticky-nav .fusion-navbar-nav .fusion-megamenu-wrapper li a,
+                #wrapper #sticky-nav .fusion-navbar-nav .fusion-megamenu-wrapper li ul li a {
+                    border-bottom: 0px !important;
+                }
+                .fusion-reading-box-container .reading-box,
+                .fusion-flip-box .flip-box-front {
+                    border-color: #65a522 !important;
+                }
+                .flip-box-front {
+                    background-color: #65a522 !important;
+                }
+                a[title="Teacher Comments"] {
+                    font-weight: bold;
+                }
+                .btn-default.button.xlarge.button.green.fusion-button.button-flat.button-square.button-xlarge.button-green {
+                    background-color: #FFCD41;
+                    background: #FFCD41;
+                    color: black !important;
+                    font-size: 18px;
+                    text-shadow: 0px 0px;
+                    padding: 10px 20px;
+                    border: 1px solid #FFCD41;
+                    font-weight: bold;
+                    font-size: 16px;
+                    transition: all .25s;
+                }
+                .review blockquote q,
+                .post-content blockquote,
+                form.checkout .payment_methods .payment_box {
+                    background-color: #fff !important;
+                    border: 1px solid #9e2fb3 !important;
+                    color: #9e2fb3 !important;
+                }
+                .review blockquote q,
+                .post-content blockquote q,
+                form.checkout .payment_methods .payment_box q {
+                    color: #9e2fb3 !important;
+                }
+                .fusion-testimonials.fusion-testimonials-1 .author:after {
+                    border-top-color: #9e2fb3 !important;
+                    z-index: 9999;
+                }
+                .fusion-testimonials.fusion-testimonials-1 .author:after {
+                    border-top-color: #9e2fb3 !important;
+                }
+                .fusion-reading-box-container .reading-box {
+                    border: 4px solid #9e2fb3 !important;
+                    border-color: #9e2fb3 !important;
+                }
+                @media (min-width: 768px) {
+                    body #main a,
+                    body #main a:before,
+                    body #main a:after,
+                    .single-navigation a[rel="prev"]:before,
+                    .single-navigation a[rel="next"]:after {
+                        color: #9e2fb3;
+                    }
+                }
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    font-family: 'Oswald', sans-serif !important;
+                    font-weight: 700 !important;
+                    line-height: 1.2 !important;
+                    text-shadow: rgba(0, 0, 0, 0) 0px 0px 1px;
+                    color: #333 !important;
+                }
+                .h1,
+                h1 {
+                    font-size: 36px !important;
+                }
+                .h2,
+                h2 {
+                    font-size: 30px !important;
+                }
+                .h3,
+                h3 {
+                    font-size: 24px !important;
+                }
+                .h4,
+                h4 {
+                    font-size: 18px !important;
+                }
+                .h5,
+                h5 {
+                    font-size: 14px !important;
+                }
+                .h6,
+                h6 {
+                    font-size: 12px !important;
+                }
+                body .fusion-content-boxes.content-boxes.columns.fusion-columns-1.fusion-content-boxes-1.content-boxes-icon-boxed.row .col.content-wrapper-background.content-wrapper-boxed,
+                .fusion-reading-box-container .reading-box .fusion-fullwidth.fullwidth-box {
+                    background-color: rgb(246, 236, 248) !important;
+                    padding: 10px;
+                }
+                body #wrapper #header #nav .sub-menu {
+                    padding: 5px 0;
+                    margin: 2px 0 0;
+                    font-size: 14px;
+                    text-align: left;
+                    list-style: none;
+                    background-color: #fff !important;
+                    -webkit-background-clip: padding-box;
+                    background-clip: padding-box;
+                    border: 1px solid #ccc;
+                    border: 1px solid rgba(0, 0, 0, .15);
+                    border-radius: 4px;
+                    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+                }
+                body #wrapper #header #nav .sub-menu a {
+                    display: block;
+                    padding: 3px 20px;
+                    clear: both;
+                    font-weight: 400;
+                    line-height: 1.42857143;
+                    color: #333 !important;
+                    text-transform: uppercase;
+                    font-family: 'Oswald', sans-serif;
+                    font-weight: normal;
+                    letter-spacing: 0.5px;
+                    white-space: normal;
+                }
+                body #wrapper #header #nav .sub-menu a:hover {
+                    background-color: #e8e8e8;
+                    background-image: -webkit-linear-gradient(top, #f5f5f5 0, #e8e8e8 100%);
+                    background-image: -o-linear-gradient(top, #f5f5f5 0, #e8e8e8 100%);
+                    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#e8e8e8));
+                    background-image: linear-gradient(to bottom, #f5f5f5 0, #e8e8e8 100%);
+                    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+                    background-repeat: repeat-x;
+                }
+                .footer-funding p {
+                    border-top: solid #717171 1px;
+                    padding-top: 8px;
+                    font-size: 13px;
+                }
+                #nav ul.sub-menu li,
+                #sticky-nav ul.sub-menu li {
+                    border-right: 0px solid #000;
+                    padding-right: 15px !important;
+                    padding-left: 15px;
+                    padding: 0px 0px 0px !important;
+                    height: auto;
+                    line-height: 10px;
+                    border-bottom: 0px;
+                }
+                body #wrapper #header #nav .sub-menu a {
+                    border-bottom: 0px !important;
+                }
+                .fusion-accordian .panel-title a .fa-fusion-box {
+                    background-color: #a0ce4e !important;
+                }
+                .fusion-accordian .panel-title a:hover .fa-fusion-box {
+                    background-color: #86ac41 !important;
+                }
+                .fusion-accordian .panel-title .active .fa-fusion-box,
+                ul.circle-yes li:before,
+                .circle-yes ul li:before,
+                .progress-bar-content,
+                .pagination .current,
+                .bbp-topic-pagination .current,
+                .header-v3 .header-social,
+                .header-v4 .header-social,
+                .header-v5 .header-social,
+                .date-and-formats .date-box,
+                .table-2 table thead,
+                .onsale,
+                .woocommerce-pagination .current,
+                .woocommerce .social-share li a:hover i,
+                .price_slider_wrapper .ui-slider .ui-slider-range,
+                .tagcloud a:hover,
+                .cart-loading,
+                #toTop:hover,
+                #bbpress-forums div.bbp-topic-tags a:hover,
+                #wrapper .search-table .search-button input[type="submit"]:hover,
+                ul.arrow li:before,
+                p.demo_store,
+                .avada-myaccount-data .digital-downloads li:before,
+                .avada-thank-you .order_details li:before {
+                    background-color: #a0ce4e !important;
+                }

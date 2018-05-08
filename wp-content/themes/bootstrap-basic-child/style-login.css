@@ -1,0 +1,61 @@
+body {
+	background-image: url('img/all_the_trees.jpg');
+}
+
+.login h1 a {
+	background: none;
+	display: inline;
+	font-size: 40px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+
+.login h1 a:hover, .login #backtoblog a:hover, .login #nav a:hover {
+	color: #333;
+}
+
+#nav a {
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#backtoblog a  {
+	font-size: 14px;
+}
+
+.login #backtoblog a, .login #nav a {
+	color: #fff;
+	background-color: #999999;
+}
+
+input[type="checkbox"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="radio"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, select:focus, textarea:focus {
+	border-color: #9E2FB3;
+	box-shadow: none;
+}
+
+.wp-core-ui .button-primary {
+	border-color: #9E2FB3;
+	box-shadow: none;
+	background-color: #9E2FB3;
+	text-shadow: none;
+	text-transform: uppercase;
+}
+
+.wp-core-ui .button-primary:hover {
+	background-color: #333;
+	border-color: #333;
+	box-shadow: none;
+}
+
+.login label {
+	color: #000;
+}
+
+.login #login_error, .login .message {
+	border-left-color: #9E2FB3;
+}

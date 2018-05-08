@@ -1,0 +1,25 @@
+<?php
+
+$cminds_plugin_config = array(
+	'plugin-is-pro'				 => TRUE,
+	'plugin-has-addons'			 => TRUE,
+	'plugin-version'			 => '3.2.8',
+	'plugin-abbrev'				 => 'cmtt',
+	'plugin-short-slug'			 => 'tooltip',
+	'plugin-parent-short-slug'	 => '',
+	'plugin-file'				 => CMTT_PLUGIN_FILE,
+	'plugin-dir-path'			 => plugin_dir_path( CMTT_PLUGIN_FILE ),
+	'plugin-dir-url'			 => plugin_dir_url( CMTT_PLUGIN_FILE ),
+	'plugin-basename'			 => plugin_basename( CMTT_PLUGIN_FILE ),
+	'plugin-icon'				 => '',
+	'plugin-name'				 => CMTT_NAME,
+	'plugin-license-name'		 => CMTT_CANONICAL_NAME,
+	'plugin-slug'				 => '',
+	'plugin-menu-item'			 => CMTT_MENU_OPTION,
+	'plugin-textdomain'			 => CMTT_SLUG_NAME,
+	'plugin-userguide-key'		 => '6-cm-tooltip',
+	'plugin-store-url'			 => 'https://www.cminds.com/store/tooltipglossary/',
+	'plugin-review-url'			 => 'https://wordpress.org/support/view/plugin-reviews/enhanced-tooltipglossary',
+	'plugin-changelog-url'		 => CMTT_RELEASE_NOTES,
+	'plugin-licensing-aliases'	 => array( CMTT_LICENSE_NAME ),
+);

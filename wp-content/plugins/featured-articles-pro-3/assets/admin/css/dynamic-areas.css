@@ -1,0 +1,79 @@
+.fa-area-desc{
+	display:none;	
+}
+	.fa-area-desc p.info{
+		font-size:12px;
+		font-style:italic;
+		padding-top:2px;
+		margin-top:0px;
+	}
+.fa-area-code{
+	display:block;
+	position:relative;
+	padding:5px 10px;
+	border:1px #ccc solid;
+	background:#FFFDD3;
+	color:#000;
+	-moz-user-select:text;
+	cursor:text;
+}
+
+.fa-area-actions{
+	display:block;
+	position:relative;
+	height:24px;
+	width:52px;
+	border:1px #EEE solid;
+	border-top:none;
+	margin-left:2px;
+	box-shadow:0px 1px 2px #EEE;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+}
+	.action-delete,
+	.action-edit{
+		display:block;
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:18px;
+		height:18px;
+		font:20px 'dashicons';
+		background:none;	
+		overflow:hidden;
+		text-decoration:none;
+		background:#FFF;		
+		padding:0px 4px 6px 2px;
+		border:none;
+		z-index:100;
+	}
+		.action-delete:before{
+			content: "\f153";
+			color:red;
+		}
+		.action-edit{
+			left:26px;
+			border-left:1px #EEE solid;
+		}
+		.action-edit:before{
+			content: "\f111";			
+		}
+
+.fa-area-code-label{
+	line-height:20px;	
+	vertical-align:baseline;
+	display:block;
+	position:relative;
+	cursor:pointer;	
+}		
+.fa-area-code-label:after{
+	content: "\f140";
+	font:20px 'dashicons';
+	position:absolute;
+	top:-3px;
+}
+
+.no-name{
+	color:#999;
+	font-style: italic;	
+}

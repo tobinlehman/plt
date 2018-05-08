@@ -1,0 +1,38 @@
+/*
+Theme Name: Bootstrap Basic Child
+Theme URI: 
+Description: Bootstrap Basic Child Theme
+Author: Yesenia Sotelo
+Author URI: http://smartcausedigital.com
+Template: bootstrap-basic
+Version: 1
+License: MIT
+License URI: http://opensource.org/licenses/MIT
+Text Domain: bootstrap-basic
+Domain Path: /languages/
+Tags: white, gray, light, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, front-page-post-form, post-formats, threaded-comments, translation-ready
+
+*/
+
+/* CUSTOM CSS */
+
+
+h1.entry-title {
+	font-size: 86px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+}
+
+.spaced {
+	font-size: 86px;
+	letter-spacing: 4px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+}
+
+.spacedtwo {
+	font-size: 86px;
+	letter-spacing: 2px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+}

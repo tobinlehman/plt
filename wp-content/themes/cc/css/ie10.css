@@ -1,0 +1,13 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+	#mega-menu-wrap-main-menu ul#mega-menu-main-menu li:last-child{
+		margin-right: 0px !important;
+		border-right: 1px solid #7b7e84;
+	}
+	#mega-menu-wrap-main-menu ul#mega-menu-main-menu li{
+		margin-right: 0px !important;
+		border-right: 2.98px solid #7b7e84;
+	}
+	#mega-menu-wrap-main-menu ul#mega-menu-main-menu li a.mega-menu-link{
+		padding: 0 4px 0 6.7px!important;
+	}
+}

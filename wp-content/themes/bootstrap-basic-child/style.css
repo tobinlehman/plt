@@ -1,0 +1,4434 @@
+/*
+Theme Name: Bootstrap Basic Child
+Theme URI: 
+Description: Bootstrap Basic Child Theme
+Author: Yesenia Sotelo
+Author URI: http://smartcausedigital.com
+Template: bootstrap-basic
+Version: 1
+License: MIT
+License URI: http://opensource.org/licenses/MIT
+Text Domain: bootstrap-basic
+Domain Path: /languages/
+Tags: white, gray, light, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, front-page-post-form, post-formats, threaded-comments, translation-ready
+
+*/
+
+
+/* CUSTOM CSS */
+
+
+/* BODY */
+
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* TEXT STYLES */
+
+body {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: rgba(0, 0, 0, 0) 0px 0px 1px;
+}
+
+h1.entry-title {
+    font-size: 50px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.page-template-page-signup h1.entry-title {
+    font-size: 41px;
+    text-align: center;
+}
+
+.page-template-page-signup #site-footer {
+    border-top: none;
+    font-size: inherit;
+    padding-top: 60px;
+    float: left;
+    margin-top: 0px;
+}
+
+a {
+    color: #9E2FB3;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+a.read-more {
+    color: #000;
+    font-size: .85em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+ul,
+ul li {
+    line-height: 1.5;
+}
+
+
+/* FORMS */
+
+.form-control:focus {
+    border-color: #9E2FB3;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(159, 38, 181, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(159, 38, 181, .6);
+}
+
+
+/* TEMPLATE */
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.container>.navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.clearfix:after {
+    content: " ";
+    /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+iframe {
+    border: none;
+}
+
+
+/* COLOR PALETTE */
+
+.purple {
+    color: #9E2FB3;
+}
+
+.lightpurple {
+    color: #BF73CA;
+}
+
+.green {
+    color: #66A521;
+}
+
+.lightgreen {
+    color: #99D529;
+}
+
+.teal {
+    color: #0F7A5F;
+}
+
+.yellow {
+    color: #FECC2F;
+}
+
+.orange {
+    color: #FC5D41;
+}
+
+.lightorange {
+    color: #FDB163;
+}
+
+.yellowbutton {
+    background-color: #FECC2F;
+    border: 1px solid #FECC2F;
+}
+
+.yellowbutton:hover,
+.yellowbutton:focus {
+    background-color: #fff;
+}
+
+.greenbutton {
+    background-color: #66A521;
+    border: 1px solid #66A521;
+}
+
+.greenbutton:hover,
+.greenbutton:focus {
+    background-color: #fff;
+}
+
+.orangebutton {
+    background-color: #FC5D41;
+    border: 1px solid #FC5D41;
+}
+
+.orangebutton:hover,
+.orangebutton:focus {
+    background-color: #fff;
+}
+
+
+/* MAIN MENU */
+
+.topbar {
+    background-color: #9E2FB3;
+    min-height: 50px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.topbar a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.topbar .widget {
+    text-align: right;
+    display: inline-block;
+}
+
+.topbar ul {
+    padding-top: 12px;
+    padding-left: 0;
+}
+
+.topbar ul li {
+    list-style: none;
+    display: inline;
+}
+
+.topbar ul li a {
+    border-right: 1px solid #fff;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.topbar #custom_post_widget-41 {
+    float: left;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.topbar #custom_post_widget-41 p {
+    margin-bottom: 0;
+}
+
+.widget_bootstrapbasic_search_widget .navbar-right {
+    float: none !important;
+}
+
+.navbar-default {
+    background-image: none;
+    box-shadow: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #000;
+    padding: 0 10px;
+}
+
+.navbar-default .navbar-nav>li {
+    border-right: 1px solid #000;
+}
+
+.navbar-default .navbar-nav>li:last-child {
+    border-right: none;
+}
+
+.navbar-default .navbar-nav>li ul li {
+    border-right: none;
+}
+
+.page-header-top-right {
+    margin-top: 80px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.open>a {
+    background-image: none;
+    box-shadow: none;
+    background-color: transparent;
+    color: #000;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #9E2FB3;
+}
+
+.dropdown-menu>.active>a {
+    background-color: inherit;
+    background-image: none;
+    color: inherit;
+}
+
+.dropdown-menu>.active>a:hover {
+    background-color: inherit;
+    background-image: inherit;
+    color: #333;
+}
+
+.dropdown-menu a {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+}
+
+.dropdown-menu>li>a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    white-space: normal;
+}
+
+.container.page-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.container.page-container .col-md-2 {
+    padding-left: 0;
+}
+
+.container.page-container .col-md-10 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+/* GENERAL PAGE TEMPLATE */
+
+.page-template-default h1.entry-title,
+.page-template-page-keylinks h1.entry-title {
+    letter-spacing: 1px;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.page-template-default #main-column,
+.page-template-page-keylinks #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+.general-footer-cta {
+    background-color: #fff;
+}
+
+.general-footer-cta .widget {
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+}
+
+.general-footer-cta h2 {
+    text-align: center;
+    font-size: 38px;
+    letter-spacing: 1px;
+}
+
+.general-footer-cta h2 a {
+    color: inherit;
+}
+
+.generalfooterblock {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+    text-align: center;
+}
+
+.generalfooterblock:last-child {
+    margin-right: 0;
+}
+
+.page-template-default #site-footer,
+.page-template-page-keylinks #site-footer {
+    margin-top: 0px;
+}
+
+.page-template-default .email-signup,
+.page-template-keylinks .email-signup {
+    margin-bottom: -20px;
+}
+
+.page-template-default #content,
+.page-template-page-keylinks #content {
+    margin-bottom: 0px;
+}
+
+#main-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+#content {
+    margin-bottom: 0;
+}
+
+
+/* CATEGORIES */
+
+footer.entry-meta a,
+footer.entry-meta span.separator {
+    display: none;
+}
+
+footer.entry-meta a:nth-child(1),
+footer.entry-meta a:nth-child(2),
+footer.entry-meta a:nth-child(3),
+footer.entry-meta a:nth-child(4),
+footer.entry-meta a:nth-child(5),
+footer.entry-meta a:nth-child(6),
+footer.entry-meta a:nth-child(7),
+footer.entry-meta a:nth-child(8),
+footer.entry-meta a:nth-child(9),
+footer.entry-meta a:nth-child(10),
+footer.entry-meta a:nth-child(12),
+footer.entry-meta a:nth-child(13),
+footer.entry-meta a:nth-child(14),
+footer.entry-meta a:nth-child(15),
+footer.entry-meta a:nth-child(16),
+footer.entry-meta a:nth-child(17),
+footer.entry-meta a:nth-child(18),
+footer.entry-meta a:nth-child(19),
+footer.entry-meta a:nth-child(20) {
+    display: inline;
+}
+
+footer.entry-meta span.separator:nth-child(1),
+footer.entry-meta span.separator:nth-child(2),
+footer.entry-meta span.separator:nth-child(3),
+footer.entry-meta span.separator:nth-child(4),
+footer.entry-meta span.separator:nth-child(5),
+footer.entry-meta span.separator:nth-child(6),
+footer.entry-meta span.separator:nth-child(7),
+footer.entry-meta span.separator:nth-child(8),
+footer.entry-meta span.separator:nth-child(9),
+footer.entry-meta span.separator:nth-child(10),
+footer.entry-meta span.separator:nth-child(11),
+footer.entry-meta span.separator:nth-child(12),
+footer.entry-meta span.separator:nth-child(13),
+footer.entry-meta span.separator:nth-child(14),
+footer.entry-meta span.separator:nth-child(15),
+footer.entry-meta span.separator:nth-child(16),
+footer.entry-meta span.separator:nth-child(17),
+footer.entry-meta span.separator:nth-child(18),
+footer.entry-meta span.separator:nth-child(19) {
+    display: inline;
+    color: #999;
+}
+
+#main-column .post footer.entry-meta a,
+#main-column footer.entry-meta a {
+    color: #999;
+}
+
+#main-column .post footer.entry-meta,
+#main-column footer.entry-meta {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#main-column footer.entry-meta .glyphicon {
+    color: #999;
+}
+
+
+/* HOMEPAGE */
+
+#main-column .post,
+#main-column .page {
+    border: none;
+}
+
+.page-template-page-homepage #main-column {
+    background-image: url('https://www.plt.org/wp-content/uploads/2016/05/make_learning_fun.jpg');
+    min-height: 500px;
+    padding: 0;
+    background-size: cover;
+    margin-bottom: 60px;
+}
+
+.page-template-page-homepage article {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 75%;
+    margin: 150px auto 0;
+    text-align: center;
+}
+
+.page-template-page-homepage article h1 {
+    font-size: 50px;
+}
+
+.page-template-page-homepage article h1,
+.page-template-page-homepage article p {
+    color: #000;
+}
+
+.page-template-page-homepage article p {
+    font-size: 30px;
+}
+
+.page-template-page-homepage article .yellowbutton {
+    display: inline-block;
+    padding: 10px 60px;
+}
+
+.page-template-page-homepage article .yellowbutton a {
+    font-weight: bold;
+    color: #000;
+    font-size: 16px;
+}
+
+.homepage-description .widget {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.homepage-description h2 {
+    font-size: 36px;
+    letter-spacing: 1.2px;
+}
+
+.homepage-description .homepage-featured-icon:first-child {
+    margin-top: 100px;
+}
+
+.homepage-featured-icon {
+    float: left;
+    width: 33%;
+    margin-bottom: 35px;
+}
+
+.homepage-featured-icon a {
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
+.homepage-resources {
+    margin-bottom: 60px;
+}
+
+table.small-table,
+table.medium-table {
+    display: none;
+}
+
+table.large-table {
+    display: block;
+    margin: 0 auto;
+}
+
+.homepage-resources table,
+.homepage-resources table h2,
+.homepage-resources table p,
+.homepage-resources table a {
+    color: #fff;
+}
+
+.homepage-resources table h2 {
+    font-size: 29px;
+}
+
+.homepage-resources table p {
+    font-size: 14px;
+}
+
+.homepage-news .widget {
+    margin: 0 auto;
+}
+
+.homepage-news h2 {
+    margin-bottom: 60px;
+}
+
+.homepage-news #latest-news ul {
+    padding-left: 0;
+}
+
+.homepage-news #latest-news ul li {
+    list-style: none;
+    display: block;
+    font-size: 16px;
+}
+
+.homepage-news #latest-news li:nth-child(odd) img {
+    float: right;
+}
+
+.homepage-news #latest-news li:nth-child(even) img {
+    float: left;
+}
+
+.homepage-news #latest-news ul.post-categories {
+    display: inline;
+    padding-left: 0;
+}
+
+.homepage-news hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.homepage-news hr:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.homepage-news h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+.newsexcerpt {
+    width: 45%;
+    font-size: 18px;
+}
+
+.homepage-news #latest-news li:nth-child(even) .newsexcerpt {
+    width: 45%;
+}
+
+.homepage-news #latest-news li:nth-child(odd) h3,
+.homepage-news #latest-news li:nth-child(odd) .newsexcerpt {
+    margin-right: 55%;
+}
+
+.homepage-news #latest-news li:nth-child(even) .homepagenewsmeta,
+.homepage-news #latest-news li:nth-child(even) h3,
+.homepage-news #latest-news li:nth-child(even) .newsexcerpt {
+    margin-left: 55%;
+}
+
+.homepagenewsmeta {
+    text-transform: uppercase;
+}
+
+.homepagenewsmeta a {
+    color: #000;
+}
+
+.homepagenewsmeta a:hover {
+    color: #9E2FB3;
+}
+
+#custom_post_widget-34 {
+    text-align: right;
+}
+
+#custom_post_widget-34 a {
+    font-size: 16px;
+    color: #000;
+}
+
+
+/* TRAININGS LANDING PAGE */
+
+.page-template-page-trainings #main-column {
+    background-image: url('https://www.plt.org/wp-content/uploads/2016/05/trainings_cover.jpg');
+    min-height: 500px;
+    padding: 0;
+    background-size: cover;
+    margin-bottom: 60px;
+}
+
+.page-template-page-trainings article {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 75%;
+    margin: 150px auto 0;
+    text-align: center;
+}
+
+.page-template-page-trainings article h2,
+.page-template-page-trainings article p {
+    color: #000;
+}
+
+.page-template-page-trainings h1.entry-title {
+    display: none;
+}
+
+.page-template-page-trainings article h2 {
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.page-template-page-trainings article p {
+    font-size: 26px;
+}
+
+.page-template-page-trainings article .greenbutton {
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+.page-template-page-trainings article .greenbutton a {
+    font-weight: bold;
+    color: #000;
+    font-size: 16px;
+}
+
+.trainings-description:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.trainings-description .widget {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.trainings-description h2 {
+    font-size: 36px;
+    letter-spacing: 1.2px;
+}
+
+.trainingsblock {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+    margin-top: 30px;
+}
+
+.trainingsblock a {
+    color: #000;
+}
+
+.trainingsblock.blockclear {
+    margin-bottom: 45px;
+}
+
+.blockclear:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.trainingsblock.blockclear:after,
+.trainingsblock.blockclear:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.trainings-cta table td {
+    padding: 20px;
+    color: #fff;
+    width: 50%;
+}
+
+.trainings-cta table td:first-child {
+    background-color: #66A521;
+}
+
+.trainings-cta table td:last-child {
+    background-color: #0F7A5F;
+}
+
+.trainings-faq {
+    margin: 75px auto 0;
+}
+
+.trainings-faq h2 {
+    text-align: center;
+}
+
+.trainings-faq .widget.widget_custom_post_widget {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.trainings-faq .widget.widget_custom_post_widget div {
+    display: inline-block;
+    height: 300px;
+    width: 30%;
+}
+
+.trainings-faq .widget.widget_custom_post_widget div h3 {
+    position: relative;
+    width: 50%;
+    color: #fff;
+    text-align: center;
+}
+
+.trainings-faq .widget.widget_custom_post_widget p {
+    text-align: right;
+    margin: 0 100px 0 0;
+}
+
+.trainings-faq .faq1 h3 {
+    top: 43%;
+    left: 23%;
+}
+
+.trainings-faq .faq2 h3 {
+    top: 30%;
+    left: 25%;
+}
+
+.trainings-faq .faq3 h3 {
+    top: 40%;
+    left: 20%;
+}
+
+.trainings-faq .widget.widget_custom_post_widget div a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.trainings-faq .widget.widget_custom_post_widget div a:hover,
+.trainings-faq .widget.widget_custom_post_widget div a:focus {
+    color: #000;
+}
+
+.trainings-faq .faq1 {
+    margin: 0 auto;
+    padding: 0;
+    background: url(img/faq1_bg.png) no-repeat scroll center center;
+    background-size: contain;
+}
+
+.trainings-faq .faq2 {
+    margin: 0 auto;
+    background: url(img/faq2_bg.png) no-repeat scroll center center;
+    background-size: contain;
+    vertical-align: top;
+}
+
+.trainings-faq .faq3 {
+    margin: 0 auto;
+    background: url(img/faq3_bg.png) no-repeat scroll center center;
+    background-size: contain;
+    vertical-align: top;
+}
+
+
+/* ATTEND A TRAINING */
+
+.page-template-page-attend-a-training article {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-template-page-attend-a-training h1.entry-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.attendatrainingblock {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.attendatrainingblock h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 29px;
+}
+
+.page-id-59 article table td {
+    width: 25%;
+    vertical-align: top;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+.page-id-59 article table td a {
+    color: #000;
+}
+
+.trainings-faq faq1 a,
+.trainings-faq faq2 a,
+.trainings-faq faq3 a {
+    color: #fff;
+}
+
+.trainings-faq a.read-more {
+    color: #ffcd00;
+}
+
+.page-template-page-attend-a-training #site-footer {
+    margin-top: 0;
+}
+
+.page-template-page-attend-a-training #content.row-with-vspace {
+    margin-bottom: 0;
+}
+
+#custom_post_widget-15 p {
+    text-align: right;
+}
+
+#custom_post_widget-15 p a {
+    font-weight: bold;
+    color: #000;
+}
+
+
+/* TRAINING STORIES */
+
+.trainings-testimonials {
+    margin-top: 125px;
+}
+
+.trainings-testimonials #text-2.widget.widget_text,
+.attendatraining-testimonials #text-2.widget.widget_text {
+    display: inline-block;
+    float: right;
+}
+
+
+/* CURRICULUM LANDING PAGE */
+
+.page-template-page-curriculum #main-column {
+    background-image: url('https://www.plt.org/wp-content/uploads/2016/06/curriculum_cover.jpg');
+    min-height: 500px;
+    padding: 0;
+    background-size: cover;
+    margin-bottom: 60px;
+}
+
+.page-template-page-curriculum article {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 75%;
+    margin: 150px auto 0;
+    text-align: center;
+}
+
+.page-template-page-curriculum article h2,
+.page-template-page-curriculum article p {
+    color: #000;
+}
+
+.page-template-page-curriculum article p {
+    font-size: 30px;
+}
+
+.page-template-page-curriculum article {
+    width: 75%;
+    text-align: center;
+}
+
+.page-template-page-curriculum h1.entry-title {
+    display: none;
+}
+
+.page-template-page-curriculum article h2 {
+    text-transform: uppercase;
+    font-size: 68px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.page-template-page-curriculum .orangebutton {
+    display: inline-block;
+    padding: 10px 60px;
+}
+
+.page-template-page-curriculum .orangebutton a {
+    font-weight: bold;
+    color: #000;
+    font-size: 16px;
+}
+
+.curriculum-offerings {
+    background-color: #FC5D41;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.curriculum-offerings .widget {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.standards,
+.purchase {
+    width: 50%;
+    float: left;
+}
+
+.standards {
+    background-color: #FDB163;
+    color: #fff;
+    padding: 20px 100px;
+}
+
+.purchase {
+    background-color: #FECC2F;
+    color: #fff;
+    padding: 20px 100px;
+}
+
+.curriculumpage h2 a {
+    color: #000;
+}
+
+.curriculum-testimonials {
+    margin: 0 auto;
+    padding: 85px 0 40px;
+    width: 50%;
+    clear: both;
+}
+
+.curriculum-testimonials .tm-latest-updates.tm_lcptu_with_excerpt li {
+    overflow: visible;
+}
+
+.curriculum-testimonials ul.tm-latest-updates.tm_lcptu_with_excerpt li div.tm_lcptu_excerpt {
+    color: #66A521;
+    font-size: 1.625em;
+    font-style: italic;
+    text-align: center;
+}
+
+.curriculum-testimonials .tm-latest-updates.tm_lcptu_with_excerpt li.odd:after {
+    display: block;
+    clear: both;
+    content: "";
+    position: relative;
+    left: 0;
+    bottom: 0;
+    max-width: 50%;
+    height: 2px;
+    width: 50%;
+    /* or 100px */
+    border-bottom: 2px solid #000;
+    margin: 0 auto;
+    padding: 55px 0 0 0;
+}
+
+.curriculum-testimonials .tm-latest-updates.tm_lcptu_with_excerpt li.even {
+    padding: 50px 0 0 0;
+}
+
+.curriculum-testimonials ul.tm-latest-updates.tm_lcptu_with_excerpt {
+    list-style: none;
+}
+
+.curriculum-testimonials #text-2.widget.widget_text {
+    display: block;
+    position: relative;
+    margin: 60px 0 0 0;
+    left: 85%;
+    z-index: 10000;
+    padding-bottom: 14px;
+}
+
+.curriculum-lesson-plans {
+    text-align: center;
+}
+
+.curriculum-lesson-plans .metaslider {
+    margin: 65px 0 0 0;
+}
+
+.curriculum-lesson-plans .metaslider a {
+    color: #000;
+    text-decoration: none;
+}
+
+.curriculum-lesson-plans .metaslider .caption-wrap {
+    background: #fff;
+    color: #000;
+    opacity: 1;
+    padding: 20px 0;
+    position: initial;
+    text-transform: uppercase;
+}
+
+.curriculum-lesson-plans .flex-direction-nav a {
+    background: url(img/bg_direction_nav.png) no-repeat 0 0;
+    width: 52px;
+    height: 52px;
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    margin: 20px 0 0 0;
+}
+
+.curriculum-lesson-plans .flex-direction-nav .flex-next,
+.curriculum-lesson-plans .flexslider:hover .flex-next {
+    opacity: 1;
+    right: 45px;
+    background-position: -55px 0;
+}
+
+.curriculum-lesson-plans .flex-direction-nav .flex-prev,
+.curriculum-lesson-plans .flexslider:hover .flex-prev {
+    opacity: 1;
+    left: 45px;
+}
+
+.curriculum-lesson-plans h2 {
+    line-height: 0.5;
+    text-align: center;
+    margin: 75px 0 50px;
+}
+
+.curriculum-lesson-plans h2 span {
+    display: inline-block;
+    position: relative;
+}
+
+.curriculum-lesson-plans h2 span:before,
+.curriculum-lesson-plans h2 span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 2px solid #000;
+    top: 5px;
+    width: 250px;
+}
+
+.curriculum-lesson-plans h2 span:before {
+    right: 100%;
+    margin-right: 25px;
+}
+
+.curriculum-lesson-plans h2 span:after {
+    left: 100%;
+    margin-left: 25px;
+}
+
+.curriculum-testimonials h4.tm_lcptu_post_title {
+    display: none;
+}
+
+#text-6 p {
+    text-align: right;
+    margin-top: 20px;
+}
+
+#text-6 p a {
+    font-weight: bold;
+    color: #000;
+}
+
+
+/* CURRICULUM OFFERINGS */
+
+.page-template-page-curriculum-offerings #content.row-with-vspace {
+    margin-bottom: 0;
+}
+
+.page-template-page-curriculum-offerings #site-footer {
+    margin-top: 0;
+}
+
+.page-template-page-curriculum-offerings article {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-template-page-curriculum-offerings #main-column {
+    background-color: #fff;
+}
+
+.page-template-page-curriculum-offerings h1.entry-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.curriculum-offerings-education table h2,
+.curriculum-offerings-unit table h2,
+.curriculum-offerings-title table h2 {
+    color: #fff;
+}
+
+.curriculum-offerings-education table p,
+.curriculum-offerings-unit table p,
+.curriculum-offerings-title table p {
+    color: #fff;
+}
+
+.curriculum-offerings-education table a,
+.curriculum-offerings-unit table a,
+.curriculum-offerings-title table a {
+    color: #fff;
+}
+
+.curriculum-offerings-education .widget h2,
+.curriculum-offerings-unit .widget h2,
+.curriculum-offerings-title .widget h2 {
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 34px;
+}
+
+.curriculum-offerings-education div,
+.curriculum-offerings-unit div,
+.curriculum-offerings-title div {
+    line-height: 0.5;
+    text-align: center;
+    margin: 75px 0 50px;
+}
+
+.curriculum-offerings-education div p.icon-rule,
+.curriculum-offerings-unit div p.icon-rule,
+.curriculum-offerings-title div p.icon-rule {
+    display: inline-block;
+    position: relative;
+}
+
+.curriculum-offerings-education div p.icon-rule:before,
+.curriculum-offerings-education div p.icon-rule:after,
+.curriculum-offerings-unit div p.icon-rule:before,
+.curriculum-offerings-unit div p.icon-rule:after,
+.curriculum-offerings-title div p.icon-rule:before,
+.curriculum-offerings-title div p.icon-rule:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 2px solid #000;
+    top: 35px;
+    width: 250px;
+}
+
+.curriculum-offerings-education div p.icon-rule:before,
+.curriculum-offerings-unit div p.icon-rule:before,
+.curriculum-offerings-title div p.icon-rule:before {
+    right: 100%;
+    margin-right: 25px;
+}
+
+.curriculum-offerings-education div p.icon-rule:after,
+.curriculum-offerings-unit div p.icon-rule:after,
+.curriculum-offerings-title div p.icon-rule:after {
+    left: 100%;
+    margin-left: 25px;
+}
+
+.search-box {
+    position: relative;
+    color: #42474f;
+    font-size: 16px;
+}
+
+.search-box input {
+    width: 350px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #42474f;
+    text-indent: 70px;
+}
+
+.search-box .search-icon::after {
+    content: url('img/search_icon_curriculum.png');
+    position: relative;
+    top: 10px;
+    left: 45px;
+}
+
+.search-box ::-webkit-input-placeholder {
+    color: #42474f;
+    font-weight: normal;
+}
+
+.search-box :-moz-placeholder {
+    /* Firefox 18- */
+    color: #42474f;
+    font-weight: normal;
+}
+
+.search-box ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #42474f;
+    font-weight: normal;
+}
+
+.search-box :-ms-input-placeholder {
+    color: #42474f;
+    font-weight: normal;
+}
+
+ul.curriculumpage {
+    padding-left: 0;
+}
+
+ul.curriculumpage li {
+    list-style: none;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+ul.curriculumpage li:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+ul.curriculumallpage h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-size: 18px;
+}
+
+ul.curriculumallpage h4 a {
+    color: #FC5D41;
+}
+
+.curriculumallexcerpt {
+    font-size: 18px;
+    margin-bottom: inherit;
+    margin-top: inherit;
+}
+
+.curriculumpage hr {
+    width: 55px;
+}
+
+.curriculum-offerings-title div.curriculumexcerpt {
+    margin: 20px 0;
+}
+
+
+/* RESOURCES */
+
+.page-template-page-resources article {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-template-page-resources #main-column {
+    background-color: #fff;
+}
+
+.page-template-page-resources #content {
+    margin-bottom: 0;
+}
+
+.page-template-page-resources #site-footer {
+    margin-top: 0;
+}
+
+.page-template-page-resources h1.entry-title {
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.resources-description {
+    background-color: #9E2FB3;
+    color: #fff;
+    min-height: 400px;
+}
+
+.resources-description img {
+    margin-top: -20px;
+    padding-left: 40px;
+}
+
+.resources-description:before,
+.resources-description:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.resources-description h2 {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 50px;
+}
+
+.resources-description p {
+    width: 80%;
+    margin-left: 50px;
+}
+
+.resources-tools {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.resources-tools table,
+.resources-tools table h2,
+.resources-tools table p,
+.resources-tools table a {
+    color: #fff;
+}
+
+.resources-tools table td {
+    vertical-align: top;
+    padding: 20px;
+}
+
+.resources-grants .widget,
+.resources-tools .widget {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.resources-grants .widget h2 {
+    color: #9e2fb3;
+}
+
+
+/* GREENSCHOOLS */
+
+.page-template-page-greenschools #content.row-with-vspace {
+    margin-bottom: 0;
+}
+
+.page-template-page-greenschools #site-footer {
+    margin-top: 0;
+}
+
+.page-template-page-greenschools #main-column {
+    background-image: url('https://www.plt.org/wp-content/uploads/2016/06/greenschools_cover.jpg');
+    min-height: 500px;
+    padding: 0;
+    background-size: cover;
+    margin-bottom: 60px;
+}
+
+.page-template-page-greenschools article {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 75%;
+    margin: 150px auto 0;
+    text-align: center;
+}
+
+.page-template-page-greenschools article h2,
+.page-template-page-greenschools article p {
+    color: #000;
+}
+
+.page-template-page-greenschools article p {
+    font-size: 30px;
+}
+
+.page-template-page-greenschools article {
+    width: 75%;
+    text-align: center;
+}
+
+.page-template-page-greenschools h1.entry-title {
+    display: none;
+}
+
+.page-template-page-greenschools article h2 {
+    text-transform: uppercase;
+    font-size: 68px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.page-template-page-greenschools .yellowbutton {
+    display: inline-block;
+    padding: 10px 60px;
+}
+
+.page-template-page-greenschools .yellowbutton a {
+    font-weight: bold;
+    color: #000;
+    font-size: 16px;
+}
+
+.greenschools-description .widget {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.greenschoolsblock {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+    text-align: center;
+}
+
+.greenschoolsblock:last-child {
+    margin-right: 0;
+    float: none;
+}
+
+.greenschoolsblock a {
+    font-weight: bold;
+    color: #000;
+    font-size: 16px;
+}
+
+.greenschools-benefits {
+    border-top: 15px solid #66A521;
+    padding: 0;
+    clear: both;
+}
+
+.greenschools-investigations {
+    background-color: #66A521;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.greenschools-investigations p:last-child {
+    margin-bottom: 0;
+}
+
+.greenschools-investigations .widget {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.grants {
+    background-color: #9E2FB3;
+    color: #fff;
+    padding: 20px 100px;
+    width: 50%;
+    float: left;
+}
+
+.attendatraining {
+    background-color: #FDB163;
+    color: #fff;
+    padding: 20px 100px;
+    width: 50%;
+    float: left;
+}
+
+.greenschools-grants {
+    margin-bottom: -20px;
+}
+
+.greenschools-grants div {
+    height: 340px;
+}
+
+.greenschools-cta {
+    background-color: #0F7A5F;
+    color: #fff;
+}
+
+.state-map {
+    display: block;
+    margin: 0 auto;
+}
+
+.greenschools-cta .widget {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+.greenschools-cta {
+    padding: 40px 0;
+}
+
+.greenschools-cta a {
+    color: #FECC2F;
+}
+
+.greenschools-testimonials {
+    margin: 0 auto;
+    padding: 85px 0 40px;
+    width: 50%;
+    clear: both;
+}
+
+#tm_latest_cp_widget-7 h4 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.greenschools-testimonials .tm-latest-updates.tm_lcptu_with_excerpt li {
+    overflow: visible;
+}
+
+.greenschools-testimonials ul.tm-latest-updates.tm_lcptu_with_excerpt li div.tm_lcptu_excerpt {
+    color: #9E2FB3;
+    font-size: 1.625em;
+    font-style: italic;
+    text-align: center;
+}
+
+.greenschools-testimonials #tm_latest_cp_widget-6.widget.tm_latest_cp_widget {
+    margin: 60px 0 0 0;
+}
+
+.greenschools-testimonials ul.tm-latest-updates.tm_lcptu_with_excerpt {
+    list-style: none;
+}
+
+.greenschools-testimonials #text-4.widget.widget_text,
+.greenschools-testimonials #text-5.widget.widget_text {
+    display: block;
+    position: relative;
+    margin: 60px 0 0 0;
+    left: 85%;
+    z-index: 10000;
+    padding-bottom: 14px;
+}
+
+.page-template-page-greenschools-all h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-greenschools-all #main-column {
+    background-color: #fff;
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+.single-green-schools #main,
+.single-investigation #main {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.single-green-schools h1,
+.single-investigation h1 {
+    letter-spacing: 1px;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.single-green-schools h1 a,
+.single-investigation h1 a {
+    color: #333;
+}
+
+.single-green-schools .ts-fab-wrapper,
+.single-investigation .ts-fab-wrapper {
+    display: none;
+}
+
+.single-green-schools #site-footer,
+.single-investigation #site-footer {
+    margin-top: 0;
+}
+
+#text-7 {
+    margin-top: 30px;
+}
+
+#text-7 a {
+    color: #000;
+    font-weight: bold;
+}
+
+body .ts-fab-avatar {
+    display: none;
+}
+
+body .ts-fab-text {
+    margin-left: 0;
+}
+
+
+/* NEWS & STORIES */
+
+.page-template-page-news-stories h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-news-stories #main:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.page-template-page-news-stories #main-column {
+    background-color: #fff;
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+.page-template-page-news-stories .email-signup:before {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.page-template-page-news-stories .email-signup {
+    margin-bottom: 50px;
+}
+
+ul.newspage {
+    padding-left: 0;
+}
+
+ul.newspage li {
+    list-style: none;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+ul.newspage li:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+ul.newspage li img {
+    float: left;
+    margin-right: 25px;
+}
+
+ul.newspage ul.post-categories {
+    display: inline;
+    padding-left: 0;
+}
+
+ul.newspage h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+.newspageexcerpt {
+    font-size: 18px;
+    float: left;
+    width: 50%;
+}
+
+.newspagemeta {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.newspagemeta a {
+    color: #000;
+}
+
+.newspagemeta a:hover {
+    color: #9E2FB3;
+}
+
+.newstories-bottomfeed ul,
+.newstories-bottomfeed .widget {
+    width: 75%;
+    margin: 0 auto;
+}
+
+
+/* NEWS PAGE */
+
+.page-template-page-news h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-news #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+    background-color: #fff;
+}
+
+ul.newsonlypage {
+    padding-left: 0;
+}
+
+ul.newsonlypage li {
+    list-style: none;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+ul.newsonlypage li:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+ul.newsonlypage li img {
+    float: right;
+    margin-left: 25px;
+}
+
+ul.newsonlypage h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-size: 30px;
+}
+
+ul.newsonlypage h3 a {
+    color: #000;
+}
+
+.newsonlyexcerpt {
+    font-size: 18px;
+    float: left;
+    width: 45%;
+}
+
+.page-template-page-news #site-footer {
+    margin-top: 0;
+}
+
+
+/* SINGLE PAGE TEMPLATE - STATE */
+
+.single-state .row-with-vspace {
+    margin-bottom: 0;
+}
+
+.single-state #site-footer {
+    margin-top: 0;
+}
+
+.single-state h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.single-state h1.entry-title a {
+    color: #000;
+}
+
+.single-state h1.entry-title a:hover {
+    text-decoration: none;
+}
+
+.single-state #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* FIND YOUR STATE COORDINATOR */
+
+.page-id-67 article table td {
+    width: 25%;
+    vertical-align: top;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+.page-id-67 article table td a {
+    color: #000;
+}
+
+
+/* SINGLE PAGE TEMPLATE - STEM CONNECTION */
+
+.single-stem_connection .row-with-vspace {
+    margin-bottom: 0;
+}
+
+.single-stem_connection #site-footer {
+    margin-top: 0;
+}
+
+.single-stem_connection h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.single-stem_connection h1.entry-title a {
+    color: #000;
+}
+
+.single-stem_connection h1.entry-title a:hover {
+    text-decoration: none;
+}
+
+.single-stem_connection #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* STEM CONNECTIONS - ALL */
+
+.page-template-page-stemconnections h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-stemconnections #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+ul.stemconnectionpage {
+    padding-left: 0;
+}
+
+ul.stemconnectionpage li {
+    list-style: none;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+ul.stemconnectionpage li:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+ul.stemconnectionpage li img {
+    float: right;
+    margin-left: 25px;
+}
+
+ul.stemconnectionpage h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-size: 30px;
+}
+
+ul.stemconnectionpage h3 a {
+    color: #000;
+}
+
+.stemconnectionexcerpt {
+    font-size: 18px;
+    float: left;
+    width: 45%;
+}
+
+.gridpage td {
+    vertical-align: top;
+    width: 50%;
+    padding: 30px;
+}
+
+
+/* STEM CONNECTIONS - DIVERSITY */
+
+.page-template-page-stemconnections-diversity h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-stemconnections-diversity #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* STEM CONNECTIONS - INTERRELATIONSHIPS */
+
+.page-template-page-stemconnections-interrelationships h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-stemconnections-interrelationships #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* STEM CONNECTIONS - SYSTEMS */
+
+.page-template-page-stemconnections-systems h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-stemconnections-systems #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* STEM CONNECTIONS - STRUCTURE AND SCALE */
+
+.page-template-page-stemconnections-structurescale h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-stemconnections-structurescale #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* STEM CONNECTIONS - PATTERNS OF CHANGE */
+
+.page-template-page-stemconnections-patternschange h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-stemconnections-patternschange #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* SINGLE PAGE TEMPLATE - LITERATURE CONNECTION */
+
+.single-literature_connectio .row-with-vspace {
+    margin-bottom: 0;
+}
+
+.single-literature_connectio #site-footer {
+    margin-top: 0;
+}
+
+.single-literature_connectio h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.single-literature_connectio h1.entry-title a {
+    color: #000;
+}
+
+.single-literature_connectio h1.entry-title a:hover {
+    text-decoration: none;
+}
+
+.single-literature_connectio #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+.single-literature_connectio #ts-fab-below-9420 {
+    display: none;
+}
+
+#ts-fab-below-9611 {
+    display: none;
+}
+
+
+/* FAMILY ACTIVITY FEEDS */
+
+.page-template-page-familyactivity-walkingintheforest h1.entry-title,
+.page-template-page-familyactivity-inyourbackyard h1.entry-title,
+.page-template-page-familyactivity-exploringalocalpark h1.entry-title,
+.page-template-page-familyactivity-aroundyourhome h1.entry-title,
+.page-template-page-familyactivity-whenallelsefails h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-familyactivity-walkingintheforest #main-column,
+.page-template-page-familyactivity-inyourbackyard #main-column,
+.page-template-page-familyactivity-exploringalocalpark #main-column,
+.page-template-page-familyactivity-aroundyourhome #main-column,
+.page-template-page-familyactivity-whenallelsefails #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+ul.familyactivitypage {
+    padding-left: 0;
+}
+
+ul.familyactivitypage li {
+    list-style: none;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+ul.familyactivitypage li:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+ul.familyactivitypage li img {
+    float: right;
+    margin-left: 25px;
+}
+
+ul.familyactivitypage h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-size: 30px;
+}
+
+ul.familyactivitypage h3 a {
+    color: #000;
+}
+
+.familyactivityexcerpt {
+    font-size: 18px;
+    float: left;
+    width: 45%;
+}
+
+
+/* LITERATURE CONNECTION - ALL */
+
+.page-template-page-literatureconnections h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-literatureconnections #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+ul.literatureconnectionpage {
+    padding-left: 0;
+}
+
+ul.literatureconnectionpage li {
+    list-style: none;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+ul.literatureconnectionpage li:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+ul.literatureconnectionpage li img {
+    float: right;
+    margin-left: 25px;
+}
+
+ul.literatureconnectionpage h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-size: 30px;
+}
+
+ul.literatureconnectionpage h3 a {
+    color: #000;
+}
+
+.literatureconnectionexcerpt {
+    font-size: 18px;
+    float: left;
+    width: 45%;
+}
+
+
+/* SINGLE PAGE TEMPLATE - SAMPLE LESSON PLAN */
+
+.single-sample_lesson_plan .row-with-vspace {
+    margin-bottom: 0;
+}
+
+.single-sample_lesson_plan #site-footer {
+    margin-top: 0;
+}
+
+.single-sample_lesson_plan h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.single-sample_lesson_plan h1.entry-title a {
+    color: #000;
+}
+
+.single-sample_lesson_plan h1.entry-title a:hover {
+    text-decoration: none;
+}
+
+.single-sample_lesson_plan #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* LITERATURE CONNECTIONS - CATEGORIES */
+
+.page-template-templatespage-literatureconnections-k2-php h1.entry-title,
+.page-template-templatespage-literatureconnections-35-php h1.entry-title,
+.page-template-templatespage-literatureconnections-68-php h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-templatespage-literatureconnections-k2-php #main-column,
+.page-template-templatespage-literatureconnections-35-php #main-column,
+.page-template-templatespage-literatureconnections-68-php #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* SAMPLE LESSON PLAN - ALL */
+
+.page-template-page-samplelessonplan h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-samplelessonplan #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+ul.samplelessonplanpage {
+    padding-left: 0;
+}
+
+ul.samplelessonplanpage li {
+    list-style: none;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+ul.samplelessonplanpage li:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+ul.samplelessonplanpage li img {
+    float: right;
+    margin-left: 25px;
+}
+
+ul.samplelessonplanpage h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-size: 30px;
+}
+
+ul.samplelessonplanpage h3 a {
+    color: #000;
+}
+
+.samplelessonplanexcerpt {
+    font-size: 18px;
+    float: left;
+    width: 45%;
+}
+
+
+/* SINGLE PAGE TEMPLATE - FAMILY ACTIVITY */
+
+.single-family_activity .row-with-vspace {
+    margin-bottom: 0;
+}
+
+.single-family_activity #site-footer {
+    margin-top: 0;
+}
+
+.single-family_activity h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.single-family_activity h1.entry-title a {
+    color: #000;
+}
+
+.single-family_activity h1.entry-title a:hover {
+    text-decoration: none;
+}
+
+.single-family_activity #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* FAMILY ACTIVITY - ALL */
+
+.page-template-page-familyactivity h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-familyactivity #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+ul.familyactivitypage {
+    padding-left: 0;
+}
+
+ul.familyactivitypage li {
+    list-style: none;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+ul.familyactivitypage li:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+ul.familyactivitypage li img {
+    float: right;
+    margin-left: 25px;
+}
+
+ul.familyactivitypage h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-size: 30px;
+}
+
+ul.familyactivitypage h3 a {
+    color: #000;
+}
+
+.familyactivityexcerpt {
+    font-size: 18px;
+    float: left;
+    width: 45%;
+}
+
+
+/* SINGLE PAGE TEMPLATE - EDUCATOR TIP */
+
+.single-educator_tip .row-with-vspace {
+    margin-bottom: 0;
+}
+
+.single-educator_tip #site-footer {
+    margin-top: 0;
+}
+
+.single-educator_tip h1.entry-title,
+.page-template-page-educatortip-gettingstarted h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.single-educator_tip h1.entry-title a {
+    color: #000;
+}
+
+.single-educator_tip h1.entry-title a:hover {
+    text-decoration: none;
+}
+
+.single-educator_tip #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* EDUCATOR TIP - ALL */
+
+.page-template-page-educatortip h1.entry-title,
+.page-template-page-educatortip-gettingstarted h1.entry-title,
+.page-template-page-educatortip-pltactivities h1.entry-title,
+.page-template-page-educatortip-teachingoutdoors h1.entry-title,
+.page-template-page-educatortip-greeningschools h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-educatortip #main-column,
+.page-template-page-educatortip-gettingstarted #main-column,
+.page-template-page-educatortip-pltactivities #main-column,
+.page-template-page-educatortip-teachingoutdoors #main-column,
+.page-template-page-educatortip-greeningschools #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+ul.educatortippage {
+    padding-left: 0;
+}
+
+ul.educatortippage li {
+    list-style: none;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+ul.educatortippage li:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+ul.educatortippage li img {
+    float: right;
+    margin-left: 25px;
+}
+
+ul.educatortippage h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-size: 30px;
+}
+
+ul.educatortippage h3 a {
+    color: #000;
+}
+
+.educatortipexcerpt {
+    font-size: 18px;
+    float: left;
+    width: 45%;
+}
+
+
+/* SINGLE PAGE TEMPLATE - STORY */
+
+.single-story .row-with-vspace {
+    margin-bottom: 0;
+}
+
+.single-story #site-footer {
+    margin-top: 0;
+}
+
+.single-story h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.single-story h1.entry-title a {
+    color: #000;
+}
+
+.single-story h1.entry-title a:hover {
+    text-decoration: none;
+}
+
+.single-story #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* STORIES - ALL */
+
+.page-template-page-stories h1.entry-title,
+.page-template-page-stories-students h1.entry-title,
+.page-template-page-stories-teachers h1.entry-title,
+.page-template-page-stories-oustandingeducators h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-stories #main-column,
+.page-template-page-stories-students #main-column,
+.page-template-page-stories-teachers #main-column,
+.page-template-page-stories-oustandingeducators #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+ul.storiespage {
+    padding-left: 0;
+}
+
+ul.storiespage li {
+    list-style: none;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+ul.storiespage li:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+ul.storiespage li img {
+    float: right;
+    margin-left: 25px;
+}
+
+ul.storiespage h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-size: 30px;
+}
+
+ul.storiespage h3 a {
+    color: #000;
+}
+
+.storiesexcerpt {
+    font-size: 18px;
+    float: left;
+    width: 45%;
+}
+
+
+/* STORIES - SUBFEEDS */
+
+.page-template-page-stories-earlychildhood h1.entry-title,
+.page-template-page-stories-highschool h1.entry-title,
+.page-template-page-stories-college h1.entry-title,
+.page-template-page-stories-greenschools h1.entry-title,
+.page-template-page-stories-greenworksprojects h1.entry-title,
+.page-template-page-stories-teachers-nonformal h1.entry-title,
+.page-template-page-stories-teachers-elementarymiddle h1.entry-title,
+.page-template-page-stories-elementary h1.entry-title,
+.page-template-page-stories-middle h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-stories-earlychildhood #main-column,
+.page-template-page-stories-highschool #main-column,
+.page-template-page-stories-college #main-column,
+.page-template-page-stories-greenschools #main-column,
+.page-template-page-stories-greenworksprojects #main-column,
+.page-template-page-stories-teachers-nonformal #main-column,
+.page-template-page-stories-teachers-elementarymiddle #main-column,
+.page-template-page-stories-elementary #main-column,
+.page-template-page-stories-middle #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* SINGLE PAGE TEMPLATE - OUTSTANDING EDUCATOR */
+
+.single-outstanding_educator .row-with-vspace {
+    margin-bottom: 0;
+}
+
+.single-outstanding_educator #site-footer {
+    margin-top: 0;
+}
+
+.single-outstanding_educator h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.single-outstanding_educator h1.entry-title a {
+    color: #000;
+}
+
+.single-outstanding_educator h1.entry-title a:hover {
+    text-decoration: none;
+}
+
+.single-outstanding_educator #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* OUSTANDING EDUCATOR - FEEDS */
+
+
+/* STORIES - SUBFEEDS */
+
+.page-template-page-outstanding-early h1.entry-title,
+.page-template-page-outstanding-elementary h1.entry-title,
+.page-template-page-outstanding-middle h1.entry-title,
+.page-template-page-outstanding-highschool h1.entry-title,
+.page-template-page-outstanding-college h1.entry-title,
+.page-template-page-outstanding-informal h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-outstanding-early #main-column,
+.page-template-page-outstanding-elementary #main-column,
+.page-template-page-outstanding-middle #main-column,
+.page-template-page-outstanding-highschool #main-column,
+.page-template-page-outstanding-college #main-column,
+.page-template-page-outstanding-informal #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+ul.storiespage.outstanding .storiesexcerpt {
+    float: none;
+    width: 100%;
+}
+
+.page-id-484 table.outstandingeducators a {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+
+/* SINGLE PAGE TEMPLATE - CURRICULUM */
+
+.single-curriculum_ct .row-with-vspace {
+    margin-bottom: 0;
+}
+
+.single-curriculum_ct #site-footer {
+    margin-top: 0;
+}
+
+.single-curriculum_ct h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.single-curriculum_ct h1.entry-title a {
+    color: #000;
+}
+
+.single-curriculum_ct h1.entry-title a:hover {
+    text-decoration: none;
+}
+
+.single-curriculum_ct #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* CURRICULUM - ALL */
+
+.page-template-page-curriculum-all h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-curriculum-all #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+ul.curriculumallpage {
+    padding-left: 0;
+}
+
+ul.curriculumallpage li {
+    list-style: none;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+ul.curriculumallpage li:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+ul.curriculumallpage li img {
+    float: right;
+    margin-left: 25px;
+}
+
+ul.curriculumallpage h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-size: 30px;
+}
+
+ul.curriculumallpage h3 a {
+    color: #000;
+}
+
+.curriculumallexcerpt {
+    font-size: 18px;
+    float: left;
+    width: 45%;
+}
+
+
+/* SINGLE PAGE TEMPLATE - ACTIVITY */
+
+.single-activity .row-with-vspace {
+    margin-bottom: 0;
+}
+
+.single-activity #site-footer {
+    margin-top: 0;
+}
+
+.single-activity h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.single-activity h1.entry-title a {
+    color: #000;
+}
+
+.single-activity h1.entry-title a:hover {
+    text-decoration: none;
+}
+
+.single-activity #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+.eeresourcetitle {
+    font-weight: bold;
+}
+
+.activitystemconnections ul {
+    margin-left: 200px;
+}
+
+.activityiconright {
+    float: right;
+    margin-left: 20px;
+}
+
+.activityiconleft {
+    float: left;
+    margin-right: 20px;
+}
+
+
+/* ACTIVITY FEEDS */
+
+.page-template-page-activity-environmentalexp h1.entry-title,
+.page-template-page-activity-prek8 h1.entry-title,
+.page-template-page-activity-energysociety h1.entry-title,
+.page-template-page-activity-biodiversity h1.entry-title,
+.page-template-page-activity-biotechnology h1.entry-title,
+.page-template-page-activity-focusforests h1.entry-title,
+.page-template-page-activity-forestsworlds h1.entry-title,
+.page-template-page-activity-placeslive h1.entry-title,
+.page-template-page-activity-focusrisk h1.entry-title,
+.page-template-page-activity-municipal h1.entry-title,
+.page-template-page-activity-energyinvestigation h1.entry-title,
+.page-template-page-activity-wasterecycling h1.entry-title,
+.page-template-page-activity-water h1.entry-title,
+.page-template-page-activity-schoolsite h1.entry-title,
+.page-template-page-activity-environmentalquality h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-activity-environmentalexp #main-column,
+.page-template-page-activity-prek8 #main-column,
+.page-template-page-activity-energysociety #main-column,
+.page-template-page-activity-biodiversity #main-column,
+.page-template-page-activity-biotechnology #main-column,
+.page-template-page-activity-focusforests #main-column,
+.page-template-page-activity-forestsworlds #main-column,
+.page-template-page-activity-placeslive #main-column,
+.page-template-page-activity-focusrisk #main-column,
+.page-template-page-activity-municipal #main-column,
+.page-template-page-activity-energyinvestigation #main-column,
+.page-template-page-activity-wasterecycling #main-column,
+.page-template-page-activity-water #main-column,
+.page-template-page-activity-schoolsite #main-column,
+.page-template-page-activity-environmentalquality #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+ul.activitylistpage {
+    padding-left: 0;
+}
+
+ul.activitylistpage li {
+    list-style: none;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+ul.activitylistpage li:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+ul.activitylistpage li img {
+    float: right;
+    margin-left: 25px;
+}
+
+ul.activitylistpage h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-size: 30px;
+}
+
+ul.activitylistpage h3 a {
+    color: #000;
+}
+
+.activitylistexcerpt {
+    font-size: 18px;
+    float: left;
+    width: 45%;
+}
+
+.page-template-page-activity-all #main-column {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.page-template-page-activity-all h1 {
+    letter-spacing: 1px;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* RESOURCES FOR SERVICE LEARNING */
+
+.page-template-page-resourcesservicelearning-all #main-column {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.page-template-page-resourcesservicelearning-all h1 {
+    letter-spacing: 1px;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* SINGLE RESOURCE FOR SERVICE LEARNING */
+
+.single-investigation #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* SINGLE PAGE TEMPLATE - EE RESOURCE */
+
+.single-ee_resource .row-with-vspace {
+    margin-bottom: 0;
+}
+
+.single-ee_resource #site-footer {
+    margin-top: 0;
+}
+
+.single-ee_resource h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.single-ee_resource h1.entry-title a {
+    color: #000;
+}
+
+.single-ee_resource h1.entry-title a:hover {
+    text-decoration: none;
+}
+
+.single-ee_resource #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* CURRICULUM - ALL */
+
+.page-template-page-eeresources h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-page-eeresources #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+ul.eeresourcepage {
+    padding-left: 0;
+}
+
+ul.eeresourcepage li {
+    list-style: none;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+ul.eeresourcepage li:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+ul.eeresourcepage li img {
+    float: right;
+    margin-left: 25px;
+}
+
+ul.eeresourcepage h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-size: 30px;
+}
+
+ul.eeresourcepage h3 a {
+    color: #000;
+}
+
+.eeresourceexcerpt {
+    font-size: 18px;
+    float: left;
+    width: 45%;
+}
+
+
+/* SINGLE PAGE TEMPLATE - POST */
+
+.single-post .row-with-vspace {
+    margin-bottom: 0;
+}
+
+.single-post #site-footer {
+    margin-top: 0;
+}
+
+.single-post h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.single-post h1.entry-title a {
+    color: #000;
+}
+
+.single-post h1.entry-title a:hover {
+    text-decoration: none;
+}
+
+.single-post #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 60px;
+}
+
+.single-post .entry-meta-category-tag {
+    display: none;
+}
+
+
+/* COORDINATOR PAGES */
+
+.single-coordinator_page .row-with-vspace {
+    margin-bottom: 0;
+}
+
+.single-coordinator_page #site-footer {
+    margin-top: 0;
+}
+
+.single-coordinator_page h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.single-coordinator_page h1.entry-title a {
+    color: #000;
+}
+
+.single-coordinator_page h1.entry-title a:hover {
+    text-decoration: none;
+}
+
+.single-coordinator_page #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 60px;
+}
+
+
+/* KEY LINKS */
+
+.keylinks .widget {
+    width: 50%;
+    padding: 10px 100px 0;
+    color: #fff;
+    text-align: center;
+    float: left;
+}
+
+.keylinks .widget a {
+    color: #fff;
+}
+
+.keylinks .widget h4 {
+    font-size: 34px;
+}
+
+.keylinks .widget:first-child,
+.keylinks .widget:nth-child(4) {
+    background-color: #99D529;
+}
+
+.keylinks .widget:nth-child(2) {
+    background-color: #0F7A5F;
+}
+
+.keylinks .widget:nth-child(3) {
+    background-color: #66A521;
+}
+
+.keylinks:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.keylinks .widget {
+    height: 280px;
+}
+
+.keylinks .addthis_toolbox {
+    display: none;
+}
+
+
+/* CUSTOM KEY LINKS DISPLAY SETTINGS */
+
+.single-state .keylinks .widget:nth-child(5),
+.single-state .keylinks .widget:nth-child(6),
+.single-state .keylinks .widget:nth-child(7),
+.single-state .keylinks .widget:nth-child(8) {
+    display: none;
+}
+
+
+/* FIND YOUR STATE COORDINATOR */
+
+.page-id-67 #main table {
+    width: 100%;
+}
+
+.page-id-67 #main table td {
+    width: 25%;
+}
+
+
+/* COMMENTS */
+
+footer.entry-meta {
+    background-color: transparent;
+}
+
+#respond {
+    margin-bottom: 60px;
+}
+
+#respond h3#reply-title {
+    text-transform: uppercase;
+}
+
+code {
+    color: inherit;
+}
+
+.btn-primary {
+    background-image: none;
+    background-color: #9E2FB3;
+    border-color: #9E2FB3;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #333;
+    border-color: #333;
+}
+
+#comments p.help-block {
+    display: none;
+}
+
+.comment .avatar {
+    display: none;
+}
+
+
+/* CUSTOM LOGIN PAGE */
+
+#loginform-custom {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#loginform-custom label {
+    width: 100%;
+}
+
+#loginform-custom input[type="text"],
+#loginform-custom input[type="password"] {
+    border: 1px solid #9E2FB3;
+    width: 100%;
+}
+
+#loginform-custom input[type="submit"] {
+    border: 1px solid #9E2FB3;
+    background-color: #9E2FB3;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px 0 20px;
+    padding: 7px;
+    width: 100%;
+}
+
+.page-template-templatespage-loginpage-php h1.entry-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-template-templatespage-loginpage-php #main-column {
+    width: 75%;
+    margin: 0 auto;
+    float: none;
+}
+
+
+/* ADDTHIS */
+
+#custom_post_widget-36 {
+    margin-bottom: 20px;
+}
+
+
+/* EMAIL SIGNUP */
+
+.homepage-email-signup,
+.email-signup {
+    background-color: #66A521;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+
+.email-signup {
+    margin-bottom: 0;
+}
+
+.homepage-email-signup .widget,
+.email-signup .widget,
+.homepage-email-signup table,
+.email-signup table {
+    margin: 0 auto;
+    display: block;
+}
+
+.homepage-email-signup p,
+.email-signup p {
+    width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.homepage-email-signup h2,
+.email-signup h2 {
+    font-size: 29px;
+    letter-spacing: 1.2px;
+}
+
+.homepage-email-signup h2,
+.homepage-email-signup p,
+.email-signup h2,
+.email-signup p {
+    color: #fff;
+}
+
+.homepage-email-signup form input[type="text"],
+.homepage-email-signup form input[type="email"],
+.email-signup form input[type="text"],
+.email-signup form input[type="email"] {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 5px 25px;
+    color: #fff;
+    font-size: 14px;
+    width: 240px;
+    margin-right: 15px;
+}
+
+.homepage-email-signup form input[type="email"],
+.email-signup form input[type="email"] {
+    width: 300px;
+}
+
+.homepage-email-signup form input[placeholder],
+.email-signup form input[placeholder],
+{
+    color: #fff;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.homepage-email-signup form input::-webkit-input-placeholder,
+.email-signup form input::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #fff;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.homepage-email-signup form input::-moz-placeholder,
+.email-signup form input::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.homepage-email-signup form input:-ms-input-placeholder,
+.email-signup form input:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.homepage-email-signup form input:-moz-placeholder,
+.email-signup form input:-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.homepage-email-signup form input[type="submit"],
+.email-signup form input[type="submit"] {
+    background-color: #FECC2F;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    border: none;
+    padding: 5px 25px;
+}
+
+.homepage-email-signup form input[type="submit"]:hover,
+.homepage-email-signup form input[type="submit"]:focus,
+.email-signup form input[type="submit"]:hover,
+.email-signup form input[type="submit"]:focus {
+    background-color: #000;
+    color: #fff;
+}
+
+.page-template-page-trainings .email-signup,
+.page-template-page-attend-a-training .email-signup,
+.page-template-page-curriculum .email-signup {
+    margin: 0px;
+}
+
+.page-id-3579 .email-signup {
+    display: none;
+}
+
+.email-signup form {
+    margin: 0 auto;
+    display: block;
+    float: none;
+    text-align: center;
+}
+
+.hidethelabel {
+    position: absolute;
+    left: -9999px;
+}
+
+.signuptable {
+    width: 100%;
+}
+
+.signuptable td {
+    width: 50%;
+}
+
+
+/* 404 PAGE */
+
+.error404 #main-column {
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* CATEGORY PAGES */
+
+.category #main-column {
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.category h1 {
+    letter-spacing: 1px;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.categoryimage {
+    float: right;
+    margin-left: 20px;
+}
+
+
+/* SEARCH RESULTS */
+
+.search-results #main-column {
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.search-results #main-column .post,
+.search-results #main-column .page {
+    padding: 0;
+}
+
+.search-results article {
+    margin-bottom: 30px;
+}
+
+
+/* CURRICULUM SEARCH RESULTS */
+
+.page-template-page-curriculum-results #main-column {
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.page-template-page-curriculum-results h1 {
+    letter-spacing: 1px;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.page-template-page-curriculum-results #main-column .search-box input[type="search"] {
+    text-indent: 15px;
+}
+
+.page-template-page-curriculum-results #main-column .search-box input[type="submit"] {
+    text-indent: 0px;
+    width: 100px;
+    text-align: center;
+}
+
+
+/* AUTHOR BIO */
+
+.topbar .ts-fab-wrapper,
+.site-branding .ts-fab-wrapper,
+.general-footer-cta .ts-fab-wrapper,
+.email-signup .ts-fab-wrapper,
+#site-footer .ts-fab-wrapper,
+#custom_post_widget-36 .ts-fab-wrapper,
+#ts-fab-below-2472,
+.single-outstanding_educator .ts-fab-wrapper {
+    display: none;
+}
+
+
+/* PAGINATION */
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    background-color: #9E2FB3;
+    border-color: #9E2FB3;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: #9E2FB3;
+}
+
+.pagination>li>a:hover,
+.pagination>li>a:focus {
+    color: #000;
+}
+
+
+/* FOOTER */
+
+footer,
+.footer,
+#site-footer {
+    background-color: rgb(67, 71, 79);
+    color: #fff;
+    margin-top: 60px;
+}
+
+#site-footer {
+    border-top: none;
+    font-size: inherit;
+    padding-top: 60px;
+}
+
+#site-footer .col-md-10 {
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
+
+#site-footer .col-md-10 ul ul {
+    padding-left: 0;
+}
+
+#site-footer .col-md-10 ul li {
+    list-style: none;
+}
+
+#site-footer .col-md-10 ul li li {
+    font-size: 14px;
+    list-style: none;
+    line-height: 2;
+}
+
+#site-footer .col-md-10 ul li li a {
+    color: #fff;
+}
+
+.footermenublock {
+    float: left;
+    width: 20%;
+    margin-right: 5%;
+}
+
+.footermenublock ul {
+    margin-top: 15px;
+}
+
+.footermenublock:last-child {
+    margin-right: 0;
+}
+
+#custom_post_widget-4:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.footer-right {
+    font-size: 14px;
+}
+
+.footer-right a {
+    color: #fff;
+}
+
+.footer-social-icons {
+    background-color: #9E2FB3;
+    min-height: 50px;
+    padding-top: 5px;
+    margin-bottom: 45px;
+    margin-top: 45px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.footer-social-icons p {
+    margin-bottom: 5px;
+}
+
+.footer-social-icons img {
+    padding-right: 3px;
+}
+
+#footer-row .widget_search .input-group .form-control {
+    background-color: transparent;
+    border: 1px solid #9E2FB3;
+    color: #fff;
+}
+
+#footer-row .widget_search .btn-default {
+    border-radius: 0;
+    background-image: none;
+    background-repeat: no-repeat;
+    text-shadow: none;
+    border-color: transparent;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: url('img/search_icon.png');
+    margin-left: -30px;
+    margin-top: 5px;
+}
+
+#footer-row .widget_search button {
+    color: transparent;
+}
+
+#footer-row .widget_search .btn:hover {
+    background-position: inherit;
+}
+
+
+/* ALIGNMENT TO STANDARDS */
+
+.page-id-876 #post-876 table {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+.page-id-876 #post-876 table tbody {
+    width: 100%;
+}
+
+.page-id-876 #post-876 table td {
+    width: 33.3%;
+}
+
+
+/* MEMBERPRESS */
+
+.mp_wrapper {
+    display: none;
+}
+
+#main .mp_wrapper {
+    display: inherit;
+}
+
+.single-memberpressproduct #main {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.single-memberpressproduct h1 {
+    letter-spacing: 1px;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.single-memberpressproduct .ts-fab-wrapper {
+    display: none;
+}
+
+.single-memberpressproduct #site-footer {
+    margin-top: 0;
+}
+
+.mp_wrapper .mp-form-row {
+    margin-bottom: 30px;
+}
+
+.mp_wrapper label.mepr-form-radios-label,
+.mp_wrapper label.mepr-form-checkboxes-label {
+    line-height: 2;
+}
+
+.mp_wrapper .mepr-form {
+    margin-bottom: 60px;
+}
+
+.mp_wrapper input.mepr-submit {
+    border: 2px solid #9E2FB3;
+    color: #9E2FB3;
+    background-color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 50px;
+}
+
+.mp_wrapper input.mepr-submit:hover,
+.mp_wrapper input.mepr-submit:focus {
+    color: #fff;
+    background-color: #9E2FB3;
+}
+
+.mp_wrapper .mepr_price {
+    display: none;
+}
+
+.topbar #mepr-thank-you-page-message,
+.site-title #mepr-thank-you-page-message,
+.email-signup #mepr-thank-you-page-message,
+#site-footer #mepr-thank-you-page-message,
+.general-footer-cta #mepr-thank-you-page-message {
+    display: none;
+}
+
+
+/* THE BRANCH PAGE */
+
+.page-template-page-the-branch #main-column {
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.purplebar,
+.tealbar {
+    border-width: 10px;
+}
+
+.purplebar {
+    border-color: #9E2FB3;
+}
+
+.tealbar {
+    border-color: #0F7A5F;
+}
+
+.branchpageblock {
+    margin-bottom: 60px;
+}
+
+.branchpageblock ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.branchcontentimage {
+    float: left;
+    margin-right: 25px;
+}
+
+.branchpageblock ul li:after {
+    content: " ";
+    /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/* POPUP */
+
+body .popupally-outer-plsbvs-1 h2 {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+body #popup-box-sxzw-1 .popupally-inner-plsbvs-1 .desc-plsbvs,
+body #popup-embedded-box-sxzw-1 .popupally-inner-plsbvs-1 .desc-plsbvs {
+    position: inherit;
+    left: inherit;
+    left: inherit;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body #popup-box-sxzw-1 .popupally-inner-plsbvs-1 .popupally-center-plsbvs .content-plsbvs input.field-plsbvs-name[type="text"],
+body #popup-embedded-box-sxzw-1 .popupally-inner-plsbvs-1 .popupally-center-plsbvs .content-plsbvs input.field-plsbvs-name[type="text"],
+body #popup-box-sxzw-1 .popupally-inner-plsbvs-1 .popupally-center-plsbvs .content-plsbvs input.field-plsbvs[type="text"],
+body #popup-embedded-box-sxzw-1 .popupally-inner-plsbvs-1 .popupally-center-plsbvs .content-plsbvs input.field-plsbvs[type="text"] {
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid #fff;
+    height: 40px;
+    color: #fff;
+    padding: 10px;
+}
+
+body #popup-box-sxzw-1 .popupally-inner-plsbvs-1 .popupally-center-plsbvs .content-plsbvs input.submit-plsbvs[type="submit"],
+body #popup-embedded-box-sxzw-1 .popupally-inner-plsbvs-1 .popupally-center-plsbvs .content-plsbvs input.submit-plsbvs[type="submit"] {
+    border-color: #fecc2f;
+    border-radius: 0;
+    height: 40px;
+    text-shadow: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+body #popup-box-sxzw-1 .popupally-inner-plsbvs-1 form {
+    width: 100%;
+    text-align: center;
+}
+
+body #popup-box-sxzw-1 .popupally-inner-plsbvs-1 .popupally-center-plsbvs .content-plsbvs input.field-plsbvs-email[type="text"],
+body #popup-embedded-box-sxzw-1 .popupally-inner-plsbvs-1 .popupally-center-plsbvs .content-plsbvs input.field-plsbvs-email[type="text"],
+body #popup-box-sxzw-1 .popupally-inner-plsbvs-1 .popupally-center-plsbvs .content-plsbvs input.submit-plsbvs[type="submit"],
+body #popup-embedded-box-sxzw-1 .popupally-inner-plsbvs-1 .popupally-center-plsbvs .content-plsbvs input.submit-plsbvs[type="submit"] {
+    left: inherit;
+}
+
+body #popup-box-sxzw-1 .popupally-inner-plsbvs-1 .popupally-center-plsbvs .content-plsbvs input.field-plsbvs-name[type="text"] {
+    left: inherit !important;
+}
+
+
+/* Utility Search Box - Expanding
+   ========================================================= */
+
+#bootstrapbasic_search_widget-2 .widget_bootstrapbasic_search_widget {
+    background-color: transparent;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-left: 0px;
+    display: inline-block;
+}
+
+#bootstrapbasic_search_widget-2 .form-control {
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    background: url('img/search_icon.png') no-repeat scroll 0px 0px transparent;
+    font-size: 0.8em;
+    height: 22px;
+    padding: 5px 0px 0 25px !important;
+    width: 22px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin: 0px 22px 0 0;
+}
+
+#bootstrapbasic_search_widget-2 .form-control:focus {
+    font-size: 0.8em;
+    width: 200px;
+    padding-left: 150px;
+    margin-left: 0px;
+    background: #fff;
+    border-color: #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(0, 0, 0, .6);
+}
+
+#bootstrapbasic_search_widget-2 button.btn-default {
+    display: none;
+}
+
+#bootstrapbasic_search_widget-2 input[type="search"] {
+    -webkit-appearance: textfield;
+}
+
+
+/* Overrides for simple slider colors
+   ========================================================= */
+
+.curriculum-offerings .fa_slider_simple.default .main-nav .fa-nav,
+.curriculum-offerings .fa_slider_simple.default .main-nav .fa-nav:hover,
+.curriculum-offerings .fa_slider_simple.default .main-nav .fa-nav.active {
+    color: #FC5D41;
+    /*nav_bottom_*/
+}
+
+.greenschools-benefits .fa_slider_simple.default .main-nav .fa-nav,
+.greenschools-benefits .fa_slider_simple.default .main-nav .fa-nav:hover,
+.greenschools-benefits .fa_slider_simple.default .main-nav .fa-nav.active {
+    color: #66A521;
+    /*nav_bottom_*/
+}
+
+.curriculum-offerings .fa_slider_simple .main-nav .fa-nav:before {
+    content: url(../../fa_slider_themes/simple/empty-circle-orange.png);
+}
+
+.curriculum-offerings .fa_slider_simple .main-nav .fa-nav:hover:before,
+.curriculum-offerings .fa_slider_simple .main-nav .fa-nav.active:before {
+    content: url(../../fa_slider_themes/simple/solid-circle-orange.png);
+}
+
+.greenschools-benefits .fa_slider_simple .main-nav .fa-nav:before {
+    content: url(../../fa_slider_themes/simple/empty-circle-green.png);
+}
+
+.greenschools-benefits .fa_slider_simple .main-nav .fa-nav:hover:before,
+.greenschools-benefits .fa_slider_simple .main-nav .fa-nav.active:before {
+    content: url(../../fa_slider_themes/simple/solid-circle-green.png);
+}
+
+
+/* RESPONSIVE */
+
+@media (min-width: 300px) and (max-width: 667px) {
+    #bootstrapbasic_search_widget-2 .form-control {
+        margin: 0 5px 0 0;
+    }
+    #bootstrapbasic_search_widget-2 .form-control:focus {
+        width: 150px;
+    }
+    .navbar .container {
+        padding-right: 0;
+    }
+    .page-header-top-right {
+        margin-top: 0px;
+    }
+    .row-with-vspace {
+        margin-bottom: 0px;
+    }
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: #e7e7e7;
+    }
+    .navbar-default .navbar-nav>li {
+        border-right: 1px solid transparent;
+    }
+    .navbar-default .navbar-nav>li>a {
+        padding: 10px;
+        line-height: 18px;
+    }
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+    }
+    .page-template-page-homepage article,
+    .page-template-page-trainings article,
+    .page-template-page-curriculum article,
+    .page-template-page-greenschools article {
+        margin: 15px auto 0;
+    }
+    .page-template-page-homepage article h1,
+    .page-template-page-trainings article h1,
+    .page-template-page-curriculum article h1,
+    .page-template-page-greenschools article h1,
+    .page-template-default h1.entry-title {
+        font-size: 50px;
+    }
+    #main-column .attachment .entry-title,
+    #main-column .post .entry-title,
+    #main-column .page .entry-title {
+        word-wrap: normal;
+    }
+    .homepage-featured-icon {
+        float: none;
+        display: block;
+        margin: 0 auto 35px;
+        text-align: center;
+        width: 100%
+    }
+    .homepage-email-signup form input[type="text"],
+    .homepage-email-signup form input[type="email"],
+    .email-signup form input[type="text"],
+    .email-signup form input[type="email"] {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    .homepage-news #latest-news li:nth-child(odd) h3,
+    .homepage-news #latest-news li:nth-child(odd) .newsexcerpt,
+    .homepage-news #latest-news li:nth-child(even) .homepagenewsmeta,
+    .homepage-news #latest-news li:nth-child(even) h3,
+    .homepage-news #latest-news li:nth-child(even) .newsexcerpt {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .homepage-news .newsexcerpt,
+    .homepage-news #latest-news li:nth-child(even) .newsexcerpt,
+    .familyactivityexcerpt,
+    .newspageexcerpt,
+    .storiesexcerpt,
+    .page-template-page-attend-a-training article {
+        width: 95%;
+    }
+    .footermenublock {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin-top: 30px;
+    }
+    .footer-social-icons {
+        margin-right: -10px;
+    }
+    .trainingsblock {
+        float: none;
+        width: 100%;
+        margin: 30px auto;
+    }
+    .trainings-testimonials #text-2.widget.widget_text,
+    .attendatraining-testimonials #text-2.widget.widget_text,
+    .curriculum-testimonials #text-2.widget.widget_text,
+    .greenschools-testimonials #text-4.widget.widget_text,
+    .greenschools-testimonials #text-5.widget.widget_text {
+        left: 30%;
+        margin: 0 0 0 0;
+        width: 55%;
+    }
+    .generalfooterblock,
+    .greenschoolsblock,
+    .greenschools-grants .grants,
+    .greenschools-grants .attendatraining,
+    .attendatrainingblock {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .curriculum-testimonials {
+        width: 95%;
+    }
+    .curriculum-lesson-plans h2 span:before,
+    .curriculum-lesson-plans h2 span:after,
+    .curriculum-offerings-education div p.icon-rule:before,
+    .curriculum-offerings-education div p.icon-rule:after,
+    .curriculum-offerings-unit div p.icon-rule:before,
+    .curriculum-offerings-unit div p.icon-rule:after,
+    .curriculum-offerings-title div p.icon-rule:before,
+    .curriculum-offerings-title div p.icon-rule:after {
+        width: 25px;
+    }
+    div#custom_post_widget-16.widget.widget_custom_post_widget {
+        text-align: center;
+    }
+    .standards,
+    .purchase {
+        width: 100%;
+        padding: 20px 40px;
+    }
+    .search-box .search-icon::after {
+        top: 45px;
+        left: -75px;
+    }
+    .samplelessonplanexcerpt {
+        float: none;
+        width: 100%;
+    }
+    .resources-grants img {
+        width: 100%;
+    }
+    .newstories-bottomfeed {
+        padding: 15px;
+    }
+    div.state-map {
+        display: none;
+    }
+    table.medium-table,
+    table.large-table {
+        display: none;
+    }
+    table.small-table,
+    .page-id-486 table.gridpage.small-table,
+    .page-id-207 table.gridpage.small-table {
+        display: table;
+        table-layout: fixed;
+    }
+    .post-486 table.gridpage td {
+        width: 100%;
+        padding: 0;
+    }
+    .trainings-faq .widget.widget_custom_post_widget div {
+        display: block;
+        width: 100%;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .trainings-faq .widget.widget_custom_post_widget div h3 {
+        width: 50%;
+    }
+    .trainings-faq .faq1 h3 {
+        top: 50%
+    }
+    .trainings-faq .faq2 h3 {
+        top: 38%;
+    }
+    .trainings-faq .faq3 h3 {
+        top: 41%;
+    }
+    .search-box input {
+        width: 250px;
+    }
+    .page-template-page-curriculum-offerings article {
+        width: 100%;
+    }
+    .trainings-testimonials {
+        margin-top: 15px;
+    }
+    .fa_slider_cristal .go-back:after,
+    .fa_slider_cristal .go-forward:after {
+        content: url(../../fa_slider_themes/cristal/left_arrow_mobile.png) !important;
+    }
+    .fa_slider_cristal .go-forward:after {
+        content: url(../../fa_slider_themes/cristal/right_arrow_mobile.png) !important;
+    }
+    .fa_slider_cristal .go-back {
+        left: 2% !important;
+    }
+    .fa_slider_cristal .go-forward {
+        right: 5% !important;
+    }
+    .fa_slider_cristal .go-back,
+    .fa_slider_cristal .go-forward,
+    .fa_slider_cristal .go-forward {
+        bottom: 5% !important;
+    }
+    .fa_slider_cristal.content-bottom .fa_slide_content {
+        padding: 2em 5em !important;
+    }
+    .fa_slider_simple .fa_slide_content {
+        top: 35% !important;
+    }
+    table.gridpage td {
+        width: 100%;
+        padding: 20px;
+        display: block;
+    }
+    .email-signup form {
+        width: 50%;
+        padding-left: 0;
+    }
+    .email-signup form table {
+        margin: 0 auto;
+        display: block;
+        float: none;
+    }
+    .email-signup form table td {
+        width: 100%;
+        display: block;
+    }
+    .greenschools-grants div {
+        height: auto;
+    }
+    .greenschools-grants {
+        margin-bottom: 0;
+    }
+    .homepage-email-signup form input[type="text"],
+    .homepage-email-signup form input[type="email"],
+    .email-signup form input[type="text"],
+    .email-signup form input[type="email"] {
+        width: 100%;
+    }
+    body #popup-box-sxzw-1.popupally-opened-sxzw-1 {
+        display: none !important;
+    }
+    .activityicon {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+        float: none;
+    }
+    .activityiconright,
+    .activityiconleft {
+        float: none
+    }
+    .activitystemconnections ul {
+        margin-left: 0;
+    }
+    .topbar #custom_post_widget-41 {
+        display: none;
+    }
+    .page-id-67 #main table {
+        width: 100%;
+    }
+    .page-id-67 #main table td {
+        width: 100%;
+        display: block;
+    }
+    #custom_post_widget-21 table td {
+        width: 100%;
+        display: block;
+    }
+    .resources-description img {
+        max-width: 95%;
+        height: auto;
+    }
+    .resources-description p,
+    .resources-description h2 {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .resources-description p {
+        padding: 0 10px;
+    }
+    .keylinks .widget {
+        width: 100%;
+        padding: 20px;
+        float: none;
+        min-height: 400px;
+    }
+    .educatortipexcerpt {
+        float: none;
+        width: 100%;
+    }
+    .newspageexcerpt {
+        float: none;
+        width: 100%;
+    }
+    .newsonlyexcerpt {
+        float: none;
+        width: 100%;
+    }
+    .stemconnectionexcerpt {
+        float: none;
+        width: 100%;
+    }
+    .familyactivityexcerpt {
+        float: none;
+        width: 100%;
+    }
+    .literatureconnectionexcerpt {
+        float: none;
+        width: 100%;
+    }
+    .samplelessonplanexcerpt {
+        float: none;
+        width: 100%;
+    }
+    .storiesexcerpt {
+        float: none;
+        width: 100%;
+    }
+    .curriculumallexcerpt {
+        float: none;
+        width: 100%;
+    }
+    .activitylistexcerpt {
+        float: none;
+        width: 100%;
+    }
+    .eeresourceexcerpt {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 667px) {
+    .trainings-faq .widget.widget_custom_post_widget div {
+        display: inline-block;
+        height: 300px;
+        width: 30%;
+    }
+    .trainings-faq .widget.widget_custom_post_widget div h3 {
+        width: 55%;
+        font-size: 18px;
+    }
+    .trainings-faq .faq1 h3 {
+        top: 41%;
+    }
+    .trainings-faq .faq2 h3 {
+        top: 33%;
+    }
+    .trainings-faq .faq3 h3 {
+        top: 36%;
+    }
+    .footermenublock {
+        float: left;
+        width: 45%;
+        margin-right: 0;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    table.gridpage td {
+        width: 100%;
+        padding: 20px;
+        display: block;
+    }
+}
+
+@media (min-width: 668px) and (max-width: 766px) {
+    .email-signup form {
+        padding-left: 0;
+        width: 100%;
+    }
+    .greenschools-grants div {
+        height: auto;
+    }
+    .topbar #custom_post_widget-41 {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    .navbar-default .navbar-nav>li {
+        border-right: 0px solid #fff;
+    }
+    .navbar-default .navbar-nav>li>a {
+        padding: 15px 5px;
+    }
+    .page-template-page-homepage article,
+    .page-template-page-trainings article,
+    .page-template-page-curriculum article,
+    .page-template-page-greenschools article {
+        margin: 0 auto;
+    }
+    div#custom_post_widget-18.widget.widget_custom_post_widget,
+    div#custom_post_widget-30.widget.widget_custom_post_widget {
+        display: flex;
+    }
+    .curriculum-testimonials #text-2.widget.widget_text,
+    .greenschools-testimonials #text-4.widget.widget_text,
+    .greenschools-testimonials #text-5.widget.widget_text,
+    .trainings-testimonials #text-2.widget.widget_text,
+    .attendatraining-testimonials #text-2.widget.widget_text {
+        left: 50%;
+        width: 200px;
+    }
+    .curriculum-lesson-plans h2 span:before,
+    .curriculum-lesson-plans h2 span:after {
+        width: 200px;
+    }
+    .footer-social-icons {
+        margin-right: -10px;
+    }
+    .fa_slider_cristal .go-back:after,
+    .fa_slider_cristal .go-forward:after {
+        content: url(../../fa_slider_themes/cristal/left_arrow_ipad.png) !important;
+    }
+    .fa_slider_cristal .go-forward:after {
+        content: url(../../fa_slider_themes/cristal/right_arrow_ipad.png) !important;
+    }
+    .fa_slider_cristal .go-back {
+        left: 2% !important;
+    }
+    .fa_slider_cristal .go-forward {
+        right: 5% !important;
+    }
+    .fa_slider_cristal .go-back,
+    .fa_slider_cristal .go-forward,
+    .fa_slider_cristal .go-forward {
+        bottom: 5% !important;
+    }
+    .fa_slider_cristal.content-bottom .fa_slide_content {
+        padding: 2em 5em !important;
+    }
+    .fa_slider_simple .fa_slide_content {
+        top: 35% !important;
+    }
+    div.state-map {
+        display: none;
+    }
+    table.small-table,
+    .page-template-page-attend-a-training .entry-content table.large-table,
+    .homepage-resources table.large-table {
+        display: none;
+    }
+    .page-template-page-attend-a-training .entry-content table.medium-table,
+    .homepage-resources table.small-table,
+    table.large-table {
+        display: table;
+        table-layout: fixed;
+    }
+    .email-signup form {
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .homepage-email-signup .widget,
+    .email-signup .widget,
+    .homepage-email-signup table,
+    .email-signup table {
+        max-width: 85%;
+    }
+    .homepage-email-signup form,
+    .email-signup form {
+        max-width: 70%;
+    }
+    .curriculum-offerings-title {
+        width: 75%;
+        margin: 0 auto;
+        float: none;
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (max-width: 1000px) {
+    .page-header-top-right {
+        margin-top: 0px;
+    }
+    .homepage-news #latest-news li img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {}
+
+@media print {
+    header nav,
+    footer,
+    .topbar,
+    .addthis_sharing_toolbox,
+    .email-signup,
+    .general-footer-cta {
+        display: none;
+    }
+    img {
+        max-width: 100%;
+    }
+    @page {
+        margin: 2cm 0.5cm;
+    }
+    body a[href]:after {
+        content: none;
+    }
+    .keylinks .widget {
+        width: 100%;
+        display: block;
+        float: left;
+    }
+}
+
+.container-ed #iframe {
+    height: 750px !important;
+}

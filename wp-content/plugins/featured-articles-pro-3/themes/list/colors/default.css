@@ -1,0 +1,89 @@
+
+/* BEGIN FEATURED ARTICLES AUTOMATIC COLOR SCHEME */
+/* Slider container */
+.fa_slider_list.default {
+	background-color:#FFFFFF;/*container*/
+	border-width:0px;/*container*/
+	border-style:none;/*container*/
+	border-color:transparent;/*container*/
+	-moz-border-radius:0px;/*container*/
+	-webkit-border-radius:0px;/*container*/
+	-o-border-radius:0px;/*container*/
+	-ms-border-radius:0px;/*container*/
+	border-radius:0px;/*container*/
+}
+/* Slide image container */
+.fa_slider_list.default .fa-image-container{
+	border-width:1px;/*image_container*/
+	border-style:solid;/*image_container*/
+	border-color:#000000;/*image_container*/
+	background-color:transparent;/*image_container*/
+}
+/* Slide title */
+.fa_slider_list.default .slide-content h2.title{
+	color:#000000;/*slide_title*/
+	font-size:1.75em;/*slide_title*/
+}
+/* Slide title link */
+.fa_slider_list.default .slide-content h2.title a{
+	color:#000000;/*slide_title_anchor*/
+}
+/* Slide date */
+.fa_slider_list.default .slide-content .slide-date{
+	color:#000000;/*slide_date*/
+	font-size:1em;/*slide_date*/
+}
+/* Slide author name */
+.fa_slider_list.default .slide-content .slide-author{
+	color:#000000;/*slide_author*/
+	font-size:1em;/*slide_author*/
+}
+/* Slide author link */
+.fa_slider_list.default .slide-content .slide-author a{
+	color:#000000;/*slide_author_link*/
+	text-decoration:none;/*slide_author_link*/
+}
+/* Slide text */
+.fa_slider_list.default .slide-content .text{
+	color:#000000;/*slide_text*/
+	font-size:1em;/*slide_text*/
+}
+/* Read more link */
+.fa_slider_list.default .slide-content .read-more{
+	color:#000;/*read_more_link*/
+	text-decoration:underline;/*read_more_link*/
+	font-size:1.2em;/*read_more_link*/
+}
+/* Play video link */
+.fa_slider_list.default .slide-content .play-video{
+	color:#000;/*play_video_link*/
+	text-decoration:none;/*play_video_link*/
+	font-size:1.2em;/*play_video_link*/
+}
+/* Navigation container */
+.fa_slider_list.default .navigation{
+	background-color:#333333;/*navigation_container*/
+}
+/* Navigation element */
+.fa_slider_list.default .navigation .nav{
+	border-bottom-width:1px;/*nav_element*/
+	border-bottom-style:solid;/*nav_element*/
+	border-bottom-color:#6D6D6D;/*nav_element*/
+}
+/* Active navigation element */
+.fa_slider_list.default .navigation .nav.active{
+	background-color:#000000;/*nav_element_active*/
+}
+/* Navigation element anchor */
+.fa_slider_list.default .navigation .nav a{
+	color:#FFFFFF;/*nav_element_link*/
+	font-size:1em;/*nav_element_link*/
+}
+/* Navigation element image */
+.fa_slider_list.default .navigation .nav img{
+	border-width:1px;/*nav_element_link_image*/
+	border-style:solid;/*nav_element_link_image*/
+	border-color:#000000;/*nav_element_link_image*/
+}
+
+/* END FEATURED ARTICLES AUTOMATIC COLOR SCHEME */

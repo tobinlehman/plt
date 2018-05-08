@@ -1,0 +1,148 @@
+.fa_slider_list{
+	display:block;
+	position:relative;
+	max-width:100%;
+	font-size:100%;	
+	overflow:hidden;
+}
+	.fa_slider_list .slides{
+		position:relative;
+		width:100%;
+		height:100%;
+		z-index:1;
+	}
+		.fa_slider_list .slide{
+			visibility:hidden;
+			position:absolute;
+			width:100%;
+			height:100%;
+			overflow:visible;
+			z-index:1;
+		}
+		.fa_slider_list .slide:first-child{
+			display:block;
+			visibility: visible;
+		}
+			/* slide image */
+			.fa_slider_list .image_container,
+			.fa_slider_list .fa-image-container{
+				position:relative;
+				float:left;
+				width: 12em;
+				height:12em;
+				max-width:100%;
+				max-height:100%;
+				overflow:hidden;
+				margin-right:1em;			
+			}
+			
+			.fa_slider_list .slide.no-image .image_container{
+				display:none;
+			}
+			
+			.fa_slider_list .fa-image-container{
+				margin:0;
+				width:100%;
+				height:100%;
+				max-width:100%;
+				max-height:100%;
+				overflow:hidden;
+				box-sizing:border-box;
+			}
+			
+				.fa_slider_list .image_container img{
+					width:100%;
+					max-width:100%;
+					height:auto;
+					top:0;
+					left:0;	
+					bottom:0;
+					right:0;
+					margin:auto;
+				}
+				.fa_slider_list .image_container img.fa_slide_image.preloader{
+					float:none!important;
+					width:auto!important;
+					max-width:none!important;
+					height:auto!important;
+					max-height:none!important;
+					top:0!important;
+					left:0!important;	
+					bottom:0!important;
+					right:0!important;
+					margin:auto!important;
+				}
+			
+			/* slide content */
+			.fa_slider_list .slide-content{
+				position:relative;
+				z-index:2;	
+				margin-right:20em;	
+				box-content:border-box;
+				padding:2em;
+				height:100%;	
+			}
+			.fa_slider_list.left-nav .slide-content{
+				margin-left:20em;
+				margin-right:auto;
+			}
+			
+				.fa_slider_list .slide-content h2{
+					margin:0;
+					clear:none;
+				}
+			
+				.fa_slider_list .slide-content h2.title span{
+					
+				}
+				.fa_slider_list .slide-content h2.title a{
+					
+				}
+				.fa_slider_list .slide-content .text{
+					margin-bottom:1em;
+					margin-top:1em;
+				}
+					.fa_slider_list .slide-content .text p{
+						color:inherit;
+					}
+				.fa_slider_list .slide-content .read-more{
+					margin-right:.5em;
+				}
+				
+	/* navigation */		
+	.fa_slider_list .navigation{
+		position:absolute;
+		top:0;
+		right:0;
+		width:20em;
+		height:100%;
+		z-index:2;
+		overflow:hidden;	
+	}
+	
+	.fa_slider_list.left-nav .navigation{
+		right:auto;
+		left:0;
+	} 
+		
+		.fa_slider_list .navigation .nav{
+			display:block;
+			position:relative;
+			padding: 1em;
+			width:100%;
+			float:left;
+			box-sizing: border-box;
+		}
+		.fa_slider_list .navigation .nav.active{
+			
+		}
+			.fa_slider_list .navigation .nav a{
+				text-decoration:none;
+				outline:0;
+			}
+		
+			.fa_slider_list .navigation .nav img{
+				float:left;
+				margin-right:10px;
+				
+			}	

@@ -1,0 +1,7 @@
+.member-nav,
+.activity-page-top.widget-area,
+.breadcrumbs,
+header,
+.member-nav-footer{
+    display: none;
+}

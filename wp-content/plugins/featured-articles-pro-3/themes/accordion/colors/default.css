@@ -1,0 +1,105 @@
+
+/* BEGIN FEATURED ARTICLES AUTOMATIC COLOR SCHEME */
+/* Slideshow container */
+.fa-accordion.default {
+	border-width:0px;/*container*/
+	border-style:none;/*container*/
+	border-color:transparent;/*container*/
+	-moz-border-radius:0px;/*container*/
+	-webkit-border-radius:0px;/*container*/
+	-o-border-radius:0px;/*container*/
+	-ms-border-radius:0px;/*container*/
+	border-radius:0px;/*container*/
+	-moz-box-shadow:0px 0px 0px 0px ;/*container*/
+	-webkit-box-shadow:0px 0px 0px 0px ;/*container*/
+	-o-box-shadow:0px 0px 0px 0px ;/*container*/
+	-ms-box-shadow:0px 0px 0px 0px ;/*container*/
+	box-shadow:0px 0px 0px 0px ;/*container*/
+}
+/* Single slide */
+.fa-accordion.default .fa-accordion-inside .slide{
+	-moz-box-shadow:-2px -2px 10px 0px ;/*slide_container*/
+	-webkit-box-shadow:-2px -2px 10px 0px ;/*slide_container*/
+	-o-box-shadow:-2px -2px 10px 0px ;/*slide_container*/
+	-ms-box-shadow:-2px -2px 10px 0px ;/*slide_container*/
+	box-shadow:-2px -2px 10px 0px ;/*slide_container*/
+	background-color:#000000;/*slide_container*/
+}
+/* Play video link over image */
+.fa-accordion.default .slide .slide-content .play-video-overlay{
+	color:#FFFFFF;/*play_video_overlay_link*/
+	background-color:#000;/*play_video_overlay_link*/
+	-moz-border-radius:5px;/*play_video_overlay_link*/
+	-webkit-border-radius:5px;/*play_video_overlay_link*/
+	-o-border-radius:5px;/*play_video_overlay_link*/
+	-ms-border-radius:5px;/*play_video_overlay_link*/
+	border-radius:5px;/*play_video_overlay_link*/
+	-moz-text-shadow:0px 0px 0px ;/*play_video_overlay_link*/
+	-webkit-text-shadow:0px 0px 0px ;/*play_video_overlay_link*/
+	-o-text-shadow:0px 0px 0px ;/*play_video_overlay_link*/
+	-ms-text-shadow:0px 0px 0px ;/*play_video_overlay_link*/
+	text-shadow:0px 0px 0px ;/*play_video_overlay_link*/
+}
+/* Slide text container */
+.fa-accordion.default .fa-accordion-inside .slide div.info{
+	background-image:url(../images/fill.png);/*text_container*/
+}
+/* Slide title */
+.fa-accordion.default .fa-accordion-inside .slide div.info h2.title{
+	font-size:2em;/*slide_title*/
+	color:#FFFFFF;/*slide_title*/
+	font-weight:normal;/*slide_title*/
+}
+/* Slide title with anchor */
+.fa-accordion.default .fa-accordion-inside .slide div.info h2.title a{
+	color:#FFFFFF;/*slide_title_link*/
+	text-decoration:none;/*slide_title_link*/
+}
+/* Slide text */
+.fa-accordion.default .fa-accordion-inside .slide div.info div.hide{
+	font-size:1em;/*slide_text*/
+	color:#FFFFFF;/*slide_text*/
+}
+/* Slide date */
+.fa-accordion.default .fa-accordion-inside .slide div.info .fa-date{
+	color:#FFFFFF;/*slide_date*/
+	font-size:1em;/*slide_date*/
+}
+/* Slide author */
+.fa-accordion.default .fa-accordion-inside .slide div.info .fa-author{
+	color:#FFFFFF;/*slide_author*/
+	font-size:1em;/*slide_author*/
+}
+/* Slide author link */
+.fa-accordion.default .fa-accordion-inside .slide div.info .fa-author a{
+	color:#FFFFFF;/*slide_author_link*/
+	font-size:1em;/*slide_author_link*/
+	text-decoration:none;/*slide_author_link*/
+}
+/* Read more link */
+.fa-accordion.default .fa-accordion-inside .slide div.info .fa-read-more{
+	color:#FFFFFF;/*slide_read_more*/
+	font-size:1em;/*slide_read_more*/
+	text-decoration:underline;/*slide_read_more*/
+}
+/* Play video link below text */
+.fa-accordion.default .fa-accordion-inside .slide div.info .play-video-text{
+	color:#FFFFFF;/*slide_play_video_text*/
+	font-size:1em;/*slide_play_video_text*/
+	text-decoration:underline;/*slide_play_video_text*/
+}
+/* Slide title idle */
+.fa-accordion.default .fa-accordion-inside .slide div.info h2.title.idle{
+	font-size:1em;/*slide_title_idle*/
+	font-weight:normal;/*slide_title_idle*/
+	color:#FFFFFF;/*slide_title_idle*/
+	text-transform:uppercase;/*slide_title_idle*/
+}
+/* Slide title idle link */
+.fa-accordion.default .fa-accordion-inside .slide div.info h2.title.idle a{
+	color:#FFFFFF;/*slide_title_idle_link*/
+	font-style:normal;/*slide_title_idle_link*/
+	text-decoration:none;/*slide_title_idle_link*/
+}
+
+/* END FEATURED ARTICLES AUTOMATIC COLOR SCHEME */

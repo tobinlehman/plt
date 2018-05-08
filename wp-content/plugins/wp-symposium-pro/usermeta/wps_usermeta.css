@@ -1,0 +1,118 @@
+.wps_usermeta_change_item {
+	clear: both;
+	margin-top:20px;
+}
+.wps_usermeta_change_item input[type=text],
+.wps_usermeta_change_item input[type=password]{
+	max-width: 300px;
+}
+
+#wps_usermeta_change_submit {
+	margin-top: 10px;
+}
+
+.wps_usermeta_change_label {
+	font-weight: bold;
+}
+
+#wps_required_msg {
+    clear: both;
+    margin-top:25px;
+}
+
+#wps_user_not_found {
+    font-size: 2em;
+}
+
+#wps_no_map_available {
+    background-color: #efefef;
+}
+
+#wps_password_strength_result {
+    margin-top: 12px;
+    height: 30px;
+    line-height: 30px;
+    width: 300px;
+    border: 0;
+    font-size: 0.8em;
+    text-align: center;
+}
+.wps_score_1 { background-color: red; color: white; }
+.wps_score_2 { background-color: orangered; color: white; }
+.wps_score_3 { background-color: orange; color: black; }
+.wps_score_4 { background-color: lawngreen; color: black; }
+.wps_score_5 { background-color: red; color: white; }
+
+/*----- Tabs -----*/
+.wps-tabs {
+    width:100%;
+    display:inline-block;
+}
+ 
+/*----- Tab Links -----*/
+.wps-tab-links {
+    margin-bottom: 0 !important;
+}
+/* Clearfix */
+.wps-tab-links:after {
+    display:block;
+    clear:both;
+    content:'';
+}
+
+.wps-tab-links li {
+    margin:0px 5px;
+    float:left;
+    list-style:none;
+}
+
+    .wps-tab-links a {
+        padding:9px 15px;
+        display:inline-block;
+        border-radius:3px 3px 0px 0px;
+        font-size:16px;
+        font-weight:600;
+        color:#4c4c4c;
+        transition:all linear 0.15s;
+        text-decoration: none;
+    }
+    .wps-tab-links a:visited {
+    }
+    .wps-tab-links a:hover {
+        text-decoration:none;
+    }
+
+/*----- Content of Tabs -----*/
+.wps-tab-content {
+    padding:15px !important;
+    border-radius:3px;
+    margin-top: -1px;
+}
+.wps-tab-content-inner {
+    width:98%;
+    overflow: auto;
+}
+
+.wps-tab {
+    display:none;
+}
+
+.wps-tab.active {
+    display:block;
+}
+
+/* [wps-is-friend-content] */
+
+#wps_friendship_request_made,
+#wps_is_friend_content {
+    margin-bottom: 15px;
+}
+
+/* Tabs (responsive) */
+@media all and (max-width: 800px) {
+
+    .wps-tab-links { display:none; }
+    .wps-tab-content { border: 0 !important; padding: 0 !important;}
+    .wps-tab { display: block !important; }
+    
+}
